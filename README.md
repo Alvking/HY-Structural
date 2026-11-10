@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Project Setup & Local Development Guide
 
 This guide documents the complete setup workflow from extracting the archive to launching the local development environment and CMS dashboard.
@@ -182,4 +182,4 @@ and it fetches the whatsapp number from settings.yaml
 =======
 # HY-Structural
 modifying and adding extra features
->>>>>>> 20d5ce76ea4ef491b7802708e3cb86df59f340d3
+
