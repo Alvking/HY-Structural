@@ -1,0 +1,55 @@
+---
+import type { SitePageContent } from '../../lib/site-content';
+
+interface Props {
+  services?: SitePageContent['services'];
+  quickLinks: SitePageContent['quickLinks'];
+}
+
+const { services, quickLinks } = Astro.props;
+---
+
+<section class="site-section" id="services">
+  <div class="wrap">
+    {services && (
+      <>
+        <div class="section-head reveal">
+          {services.eyebrow && <p class="eyebrow">{services.eyebrow}</p>}
+          {services.title && <h2>{services.title}</h2>}
+          {services.body && <p>{services.body}</p>}
+        </div>
+
+        <div class="card-grid card-grid--services">
+          {(services.items || []).map((item) => (
+            <article class="photo-card reveal">
+              <div class="photo-card__media">
+                <img src={item.image} alt={item.imageAlt || item.title || ''} width="1536" height="1024" loading="lazy" />
+                {item.index && <span class="photo-card__index">{item.index}</span>}
+              </div>
+              <div class="photo-card__body">
+                {item.icon && <span class="photo-card__icon" aria-hidden="true">{item.icon}</span>}
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </>
+    )}
+
+    {quickLinks.length > 0 && (
+      <div class="quick-links reveal">
+        {quickLinks.map((item) => (
+          <a class="quick-link" href={item.href || '#contact'}>
+            <span>{item.index}</span>
+            <span>
+              <strong>{item.title}</strong>
+              <small>{item.body}</small>
+            </span>
+            <b aria-hidden="true">→</b>
+          </a>
+        ))}
+      </div>
+    )}
+  </div>
+</section>

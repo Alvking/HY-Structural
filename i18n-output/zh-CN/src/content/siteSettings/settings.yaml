@@ -1,0 +1,64 @@
+brandName: HY 结构加固工程有限公司
+defaultMetaDescription: >-
+  面向肯尼亚建筑与工业设施的结构加固、碳纤维（CFRP）加固、裂缝修补、混凝土修复、
+  钢结构屋面提升与基础加固服务。
+logoPath: /assets/images/cms/logoPath.png
+defaultOgImage: /assets/images/cms/defaultOgImage.png
+defaultLocale: en
+localeCookieName: site_locale
+localeSwitcherLabel: 语言
+mobileMenuLabel: 切换导航菜单
+supportedLocales:
+  - code: en
+    label: English
+  - code: zh-CN
+    label: 简体中文
+  - code: sw
+    label: Kiswahili
+categoryTranslations: []
+navigation:
+  - label: 技术能力
+    href: '#services'
+    isPrimary: false
+  - label: 结构类型
+    href: '#conditions'
+    isPrimary: false
+  - label: 项目经验
+    href: '#experience'
+    isPrimary: false
+  - label: 服务流程
+    href: '#process'
+    isPrimary: false
+  - label: 关于我们
+    href: '#about'
+    isPrimary: false
+  - label: 预约现场勘查
+    href: '#contact'
+    isPrimary: true
+footerBody: >-
+  为肯尼亚的既有建筑与工业设施提供专业结构加固、修复与改造，并以可追溯的检测、
+  设计与施工控制完成交付。
+footerLinks:
+  - label: 技术能力
+    href: '#services'
+  - label: 结构类型
+    href: '#conditions'
+  - label: 项目经验
+    href: '#experience'
+  - label: 服务流程
+    href: '#process'
+  - label: 联系方式
+    href: '#contact'
+footerContactLabel: 邮箱
+footerContactValue: 55652140@qq.com
+contactPhonePrimary: '0728630800'
+contactPhonePrimaryHref: tel:+254728630800
+contactPhoneSecondary: '0742159128'
+contactPhoneSecondaryHref: tel:+254742159128
+footerPhone: '0728630800 / 0742159128'
+footerAddress: Block D 1124 Laikipia Rd, Nairobi
+footerQuickLinksLabel: 快速链接
+footerContactColumnTitle: 联系我们
+footerEmail: 55652140@qq.com
+footerMotto: 结构医生，建筑的守护者。
+copyrightLine: © 2026 HY Structural Reinforcement Engineering Limited

@@ -1,0 +1,134 @@
+---
+import type { SitePageContent, SiteSettings } from '../../lib/site-content';
+
+interface Props {
+  contact?: SitePageContent['contact'];
+  site?: SiteSettings;
+}
+
+const { contact, site } = Astro.props;
+const form = contact?.form || {};
+const contactEmail = contact?.email || '';
+
+// Phone numbers live in site settings so the header/footer and this section share one
+// source of truth. Each number gets a tel: link plus a wa.me link, because WhatsApp is
+// how most Kenya-based enquiries actually arrive.
+const toWhatsAppDigits = (href: string) => href.replace(/^tel:/i, '').replace(/[^\d]/g, '');
+const phones = [
+  { number: site?.contactPhonePrimary, href: site?.contactPhonePrimaryHref },
+  { number: site?.contactPhoneSecondary, href: site?.contactPhoneSecondaryHref },
+]
+  .filter((item) => Boolean(item.number))
+  .map((item) => {
+    const number = String(item.number);
+    const href = item.href || `tel:${number.replace(/[^\d+]/g, '')}`;
+    return { number, href, whatsappHref: `https://wa.me/${toWhatsAppDigits(href)}` };
+  });
+const phoneLabel = form.phoneLabel || 'Phone / WhatsApp';
+---
+
+{contact && (
+  <section class="site-section site-section--dark" id="contact">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        {contact.eyebrow && <p class="eyebrow">{contact.eyebrow}</p>}
+        <h2>{contact.title}</h2>
+        <p class="lede">{contact.body}</p>
+
+        <div class="contact-details">
+          {contactEmail && <a href={`mailto:${contactEmail}`}>{contactEmail}</a>}
+          {contact.website && (
+            <a href={contact.website} target="_blank" rel="noopener">
+              {contact.websiteLabel || contact.website}
+            </a>
+          )}
+          {phones.length > 0 && (
+            <span class="contact-phones">
+              <span class="contact-phones__label">{phoneLabel}:</span>
+              {phones.map((phone) => (
+                <span class="contact-phones__item">
+                  <a href={phone.href}>{phone.number}</a>
+                  <a
+                    class="contact-phones__whatsapp"
+                    href={phone.whatsappHref}
+                    target="_blank"
+                    rel="noopener">WhatsApp</a>
+                </span>
+              ))}
+            </span>
+          )}
+          {contact.markets && <span>{contact.markets}</span>}
+          {contact.note && <span class="is-note">{contact.note}</span>}
+        </div>
+      </div>
+
+      <form class="lead-form reveal" id="lead-form" novalidate>
+        <label>
+          {form.nameLabel || 'Name'}
+          <input name="name" autocomplete="name" required />
+        </label>
+        <label>
+          {form.companyLabel || 'Company'}
+          <input name="company" autocomplete="organization" />
+        </label>
+        <label>
+          {form.emailLabel || 'Email'}
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+        <label>
+          {form.phoneLabel || 'Phone / WhatsApp'}
+          <input type="tel" name="phone" autocomplete="tel" />
+        </label>
+        <label class="is-full">
+          {form.messageLabel || 'Message'}
+          <textarea
+            name="message"
+            rows="4"
+            required
+            placeholder={form.messagePlaceholder || ''}></textarea>
+        </label>
+        <button class="btn btn--primary" type="submit">{form.submitLabel || 'Send enquiry'}</button>
+        {form.hint && <p class="form-hint">{form.hint}</p>}
+        <p class="form-status" id="lead-form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+)}
+
+<script is:inline define:vars={{ contactEmail }}>
+  (() => {
+    const form = document.getElementById('lead-form');
+    const status = document.getElementById('lead-form-status');
+    if (!form || !status) return;
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      const value = (name) => (form.querySelector(`[name="${name}"]`)?.value || '').trim();
+      const lines = [
+        `Name: ${value('name')}`,
+        `Company: ${value('company')}`,
+        `Email: ${value('email')}`,
+        `Phone / WhatsApp: ${value('phone')}`,
+        '',
+        'Structural concern:',
+        value('message'),
+      ];
+
+      const subject = `Structural enquiry — ${value('name') || 'Website visitor'}`;
+      const mailto = `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
+
+      status.textContent = contactEmail
+        ? `Opening your email application with the details ready to send to ${contactEmail}.`
+        : 'Please add a contact address before sending.';
+
+      if (contactEmail) {
+        window.location.href = mailto;
+      }
+    });
+  })();
+</script>

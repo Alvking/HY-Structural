@@ -1,0 +1,52 @@
+---
+import type { SitePageContent } from '../../lib/site-content';
+
+interface Props {
+  experience?: SitePageContent['experience'];
+}
+
+const { experience } = Astro.props;
+const feature = experience?.feature;
+---
+
+{experience && (
+  <section class="site-section site-section--muted" id="experience">
+    <div class="wrap">
+      <div class="section-head reveal">
+        {experience.eyebrow && <p class="eyebrow">{experience.eyebrow}</p>}
+        {experience.title && <h2>{experience.title}</h2>}
+        {experience.body && <p>{experience.body}</p>}
+      </div>
+
+      {feature && (
+        <div class="case-feature reveal">
+          <img src={feature.image} alt={feature.imageAlt || feature.title || ''} width="1536" height="1024" loading="lazy" />
+          <div>
+            {feature.label && <p class="case-feature__label">{feature.label}</p>}
+            <h3>{feature.title}</h3>
+            <p>{feature.body}</p>
+            {(feature.points || []).length > 0 && (
+              <ul>
+                {feature.points.map((point) => <li>{point}</li>)}
+              </ul>
+            )}
+          </div>
+        </div>
+      )}
+
+      <div class="card-grid card-grid--projects">
+        {(experience.projects || []).map((project) => (
+          <figure class="project-card reveal">
+            <img src={project.image} alt={project.imageAlt || project.title || ''} width="1536" height="1024" loading="lazy" />
+            <figcaption>
+              <strong>{project.title}</strong>
+              <small>{project.subtitle}</small>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+
+      {experience.disclaimer && <p class="disclaimer">{experience.disclaimer}</p>}
+    </div>
+  </section>
+)}

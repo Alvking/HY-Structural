@@ -1,0 +1,37 @@
+---
+import type { SitePageContent } from '../../lib/site-content';
+
+interface Props {
+  intro?: SitePageContent['intro'];
+  proof: SitePageContent['proof'];
+}
+
+const { intro, proof } = Astro.props;
+---
+
+{(intro?.title || intro?.body || proof.length > 0) && (
+  <section class="site-section site-section--tight">
+    <div class="wrap">
+      {(intro?.title || intro?.body) && (
+        <div class="intro-band reveal">
+          <div>
+            {intro?.eyebrow && <p class="eyebrow">{intro.eyebrow}</p>}
+            {intro?.title && <h2>{intro.title}</h2>}
+          </div>
+          {intro?.body && <p>{intro.body}</p>}
+        </div>
+      )}
+
+      {proof.length > 0 && (
+        <div class="proof-strip reveal">
+          {proof.map((item) => (
+            <div>
+              <strong>{item.value}</strong>
+              <span>{item.label}</span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+)}

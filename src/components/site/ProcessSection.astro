@@ -1,0 +1,48 @@
+---
+import type { SitePageContent } from '../../lib/site-content';
+
+interface Props {
+  process?: SitePageContent['process'];
+}
+
+const { process } = Astro.props;
+---
+
+{process && (
+  <section class="site-section" id="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        {process.eyebrow && <p class="eyebrow">{process.eyebrow}</p>}
+        {process.title && <h2>{process.title}</h2>}
+        {process.body && <p>{process.body}</p>}
+      </div>
+
+      <div class="integration-flow reveal" aria-label="Inspection, design and construction workflow">
+        {(process.integration || []).map((step) => (
+          <article class="flow-step">
+            {step.icon && <span class="flow-step__icon" aria-hidden="true">{step.icon}</span>}
+            {step.index && <span class="flow-step__index">{step.index}</span>}
+            <h3>{step.title}</h3>
+            <p>{step.body}</p>
+            {step.meta && <small>{step.meta}</small>}
+          </article>
+        ))}
+      </div>
+
+      {(process.steps || []).length > 0 && (
+        <>
+          {process.detailTitle && <h3 class="process-title reveal">{process.detailTitle}</h3>}
+          <ol class="process-steps reveal">
+            {process.steps.map((step) => (
+              <li>
+                <span>{step.index}</span>
+                <h3>{step.title}</h3>
+                <p>{step.body}</p>
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
+    </div>
+  </section>
+)}

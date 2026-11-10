@@ -1,0 +1,521 @@
+
+
+
+
+
+seoTitle: Uimarishaji wa Miundo na Ukarabati wa Majengo nchini Kenya
+
+seoDescription: >-
+  Uimarishaji wa miundo, uimarishaji kwa nyuzi za kaboni (CFRP), ukarabati wa nyufa,
+  ukarabati wa saruji, uimarishaji wa paa za chuma na ukarabati wa msingi kwa majengo
+  na viwanda nchini Kenya.
+keywords:
+  - uimarishaji wa miundo Kenya
+  - CFRP Kenya
+  - ukarabati wa nyufa Nairobi
+  - ukarabati wa saruji Kenya
+  - ukarabati wa majengo Nairobi
+  - uimarishaji wa paa la chuma
+  - ukarabati wa msingi Kenya
+ogTitle: HY Structural Reinforcement Engineering Limited | Kenya
+ogDescription: Suluhisho za vitendo za uimarishaji na ukarabati wa miundo nchini Kenya.
+
+brand:
+  name: HY Structural Reinforcement Engineering Limited
+  shortName: HY STRUCTURAL
+  legalName: REINFORCEMENT ENGINEERING LIMITED
+  mark: HY
+  tagline: Structural strengthening • Rehabilitation • Retrofit
+  area: Kenya
+  email: 55652140@qq.com
+  website: https://www.huayejiagu.com
+  websiteLabel: www.huayejiagu.com
+
+utilityBar:
+  message: Uimarishaji wa miundo na ukarabati nchini Kenya
+  links:
+    - label: Uwezo wa kiufundi
+      href: '#services'
+    - label: Wasiliana na timu yetu
+      href: '#contact'
+
+hero:
+  eyebrow: Uimarishaji wa miundo • Kenya
+  stagesLabel: UIMARISHAJI WA MIUNDO
+  stages:
+    - KAGUA
+    - SANIFU
+    - JENGA
+  title: Madaktari wa Miundo.
+  titleAccent: Walinzi wa Majengo.
+  subtitle: Huduma zilizounganishwa za ukaguzi, usanifu na ujenzi
+  lead: >-
+    Kutoka kasoro za miundo na tathmini ya kiufundi hadi usanifu wa uimarishaji,
+    ujenzi wa kitaalamu na ukabidhiji ulioandikwa.
+  applicationsLabel: MATUMIZI
+  applications:
+    - label: Miundo ya matofali
+      href: '#conditions'
+    - label: Miundo ya mbao
+      href: '#conditions'
+    - label: Fremu za saruji
+      href: '#conditions'
+    - label: Miundo ya chuma
+      href: '#conditions'
+    - label: Msingi
+      href: '#conditions'
+    - label: Upanuzi wa nafasi
+      href: '#conditions'
+    - label: Ongezeko la mizigo
+      href: '#conditions'
+  primaryLabel: Jadili jengo lako
+  primaryHref: '#contact'
+  secondaryLabel: Chunguza suluhisho
+  secondaryHref: '#services'
+  trust:
+    - Uratibu kutoka tathmini hadi ukabidhiji
+    - Mbinu za kitaalamu za uimarishaji
+    - Udhibiti wa ubora unaoandikwa
+  image: /assets/images/cms/hero/image.png
+  imageAlt: Fundi aliyevaa jaketi la kuakisi akibandika nyuzi za kaboni kwenye saruji iliyoharibika
+  imageNote: Picha ya dhana ya AI • kazi ya uimarishaji inayowakilisha
+
+intro:
+  eyebrow: Imejengwa kwa mradi wako
+  title: Mshirika mmoja wa kiufundi kutoka utambuzi hadi ukarabati wa kudumu.
+  body: >-
+    Chagua njia inayolingana na changamoto ya jengo lako. Tunaratibu uchunguzi, uhandisi,
+    vifaa, udhibiti wa uwanjani na ukabidhiji kwa wigo wazi.
+
+proof:
+  - value: '2012'
+    label: Kampuni ilianzishwa
+  - value: 1,000+
+    label: Kazi zilizokamilika nchini China
+  - value: Imeunganishwa
+    label: Utekelezaji wa kiufundi na ujenzi
+  - value: Kenya
+    label: Kuingia sokoni kwa ushirikiano wa ndani
+
+services:
+  eyebrow: Tunachofanya
+  title: Suluhisho za kitaalamu kwa miundo iliyopo
+  body: >-
+    Tunazingatia hatua lengo zinazoboresha uwezo wa kubeba, uimara na matumizi salama,
+    huku tukipunguza usumbufu kwa shughuli za jengo.
+  items:
+    - index: '01'
+      icon: '⌁'
+      title: Uimarishaji kwa CFRP na chuma kilichounganishwa
+      body: Nguo za nyuzi za kaboni, vibao na suluhisho za chuma zilizounganishwa kwa mihimili, sakafu na nguzo.
+      image: /assets/images/cms/services/items/0/image.png
+      imageAlt: Kazi ya uimarishaji wa CFRP kwenye mhimili wa saruji
+    - index: '02'
+      icon: '▱'
+      title: Ukarabati wa nyufa na saruji
+      body: Kuchora ramani ya nyufa, kuingiza resini, kutibu kutu, kurekebisha sehemu na kurejesha ulinzi.
+      image: /assets/images/cms/services/items/1/image.png
+      imageAlt: Fundi akirekebisha saruji iliyopasuka
+    - index: '03'
+      icon: '↗'
+      title: Mabadiliko na mabadiliko ya matumizi
+      body: Msaada wa kimuundo kwa matundu, kuondoa kuta, mizigo mikubwa, ufungaji wa mitambo na ukarabati.
+      image: /assets/images/cms/services/items/2/image.png
+      imageAlt: Fundi akiweka msaada wa muda wakati wa mabadiliko ya jengo
+    - index: '04'
+      icon: '▥'
+      title: Uimarishaji wa chuma na paa kwa sola
+      body: Uratibu wa tathmini na uimarishaji wa purlins, mihimili, viunga na viungo.
+      image: /assets/images/cms/services/items/3/image.png
+      imageAlt: Mafundi wakiimarisha paa la chuma lililoharibika kwa kutu
+    - index: '05'
+      icon: '⌂'
+      title: Msingi na kukaa chini
+      body: Msaada wa uchunguzi, dhana za kuimarisha msingi, uimarishaji wa msingi na ukarabati wa matatizo ya kukaa chini.
+      image: /assets/images/cms/services/items/4/image.png
+      imageAlt: Fundi akirekebisha msingi uliokaa chini
+    - index: '06'
+      icon: '✓'
+      title: Ukaguzi na uthibitisho wa ubora
+      body: Rekodi za uwanjani, ufuatiliaji wa vifaa, hatua za kusimamisha kazi, uratibu wa majaribio na ukabidhiji uliopangwa.
+      image: /assets/images/cms/services/items/5/image.png
+      imageAlt: Mhandisi akikagua saruji iliyoharibika
+
+quickLinks:
+  - index: '01'
+    title: Chunguza suluhisho
+    body: CFRP, saruji, chuma na msingi
+    href: '#services'
+  - index: '02'
+    title: Ona uzoefu wetu
+    body: Mbinu na ubora wa kazi kutoka miradi iliyokamilika
+    href: '#experience'
+  - index: '03'
+    title: Omba ukaguzi wa uwanjani
+    body: Tuma picha, michoro na muhtasari wa mradi
+    href: '#contact'
+
+technologies:
+  eyebrow: Teknolojia za kitaalamu za uimarishaji
+  title: Linganisha mbinu ya ukarabati na hali halisi ya muundo.
+  body: >-
+    Kila mbinu huchaguliwa baada ya ukaguzi na mapitio ya kiufundi. Mifano iliyo hapa chini
+    inaonyesha hali za kawaida zinazoweza kuhitaji hatua husika.
+  conditionLabel: 'Hali ya kawaida:'
+  items:
+    - index: '01'
+      title: Kuunganisha vibao vya chuma
+      condition: Uwezo wa mhimili au sakafu hautoshi, na nafasi ya kujenga upya kwa uzito ni ndogo.
+      image: /assets/images/cms/technologies/items/0/image.png
+      imageAlt: Ufungaji wa vibao vya chuma kwa kuingiza chokaa kwa shinikizo
+    - index: '02'
+      title: Uimarishaji kwa chuma kilichounganishwa
+      condition: Upungufu wa ndani wa kupinda au wa kukatika, vipengele vilivyozidiwa mzigo au sehemu za saruji zilizoharibika.
+      image: /assets/images/cms/technologies/items/1/image.png
+      imageAlt: Uimarishaji wa nguzo ya saruji kwa chuma kilichounganishwa
+    - index: '03'
+      title: Nguo za nyuzi za kaboni (CFRP)
+      condition: Mihimili, sakafu au nguzo zilizopasuka zinahitaji ongezeko la uwezo kwa uzito mdogo na usumbufu mdogo.
+      image: /assets/images/cms/technologies/items/2/image.png
+      imageAlt: Uimarishaji wa nguzo ya saruji kwa nguo za nyuzi za kaboni
+    - index: '04'
+      title: Kuongeza sehemu
+      condition: Upotevu mkubwa wa sehemu ya saruji, uhaba wa nguo za chuma au ongezeko kubwa la mzigo.
+      image: /assets/images/cms/technologies/items/3/image.png
+      imageAlt: Kazi ya kuongeza sehemu ya saruji
+    - index: '05'
+      title: Kuweka nguo za chuma (anchoring)
+      condition: Vipengele vipya, upanuzi au viungo vinahitaji uimarishaji wa kuaminika wa nguo za chuma kwenye saruji iliyopo.
+      image: /assets/images/cms/technologies/items/4/image.png
+      imageAlt: Ufungaji wa nguo za chuma zilizowekwa baada ya saruji
+    - index: '06'
+      title: Ukarabati wa nyufa na kuingiza
+      condition: Nyufa zinazotembea au zilizosimama, kuingia kwa maji, mashimo (honeycombing) au uharibifu unaohusiana na kutu.
+      image: /assets/images/cms/technologies/items/5/image.png
+      imageAlt: Kuingiza resini kwenye nyufa na ukarabati wa saruji
+    - index: '07'
+      title: Kubadilisha ukuta unaobeba mzigo
+      condition: Ukuta unaobeba mzigo unapaswa kufunguliwa au kuondolewa ili kuunda mpangilio unaobebwa na mhimili.
+      image: /assets/images/cms/technologies/items/6/image.png
+      imageAlt: Kubadilisha ukuta unaobeba mzigo na kuweka mhimili mpya
+    - index: '08'
+      title: Saruji ya uwezo mkubwa wa kujinyoosha
+      condition: Maeneo ya tetemeko, mshtuko au mwendo yanahitaji uvumilivu bora wa kubadilika na udhibiti wa nyufa.
+      image: /assets/images/cms/technologies/items/7/image.png
+      imageAlt: Ufungaji wa safu ya saruji ya uwezo mkubwa wa kujinyoosha
+    - index: '09'
+      title: Kubadilisha nguzo ya saruji
+      condition: Nguzo imepondwa sana, imeathiriwa na kutu au imepoteza sehemu, hivyo inahitaji kubadilishwa kwa hatua.
+      image: /assets/images/cms/technologies/items/8/image.png
+      imageAlt: Kubadilisha nguzo ya saruji kwa hatua, na msaada wa muda na saruji mpya
+    - index: '10'
+      title: Rundo za nanga za shinikizo tuli
+      condition: >-
+        Kukaa chini kwa msingi, uwezo mdogo wa kubeba au uimarishaji wa msingi katika nafasi ndogo
+        ambapo mtetemo mdogo na vifaa vidogo vinahitajika.
+      image: /assets/images/cms/technologies/items/9/image.png
+      imageAlt: Ufungaji wa rundo za nanga za shinikizo tuli
+
+conditions:
+  eyebrow: Kasoro za kawaida na mabadiliko ya matumizi
+  title: Tambua hali ya muundo. Chagua hatua sahihi.
+  body: >-
+    Dalili za kawaida na njia za ukarabati zimepangwa kwa mfumo wa muundo. Suluhisho la mwisho
+    linahitaji ukaguzi wa uwanjani, majaribio na mapitio ya kiufundi.
+  items:
+    - index: '01'
+      title: Miundo ya matofali
+      image: /assets/images/cms/conditions/items/0/image.png
+      imageAlt: Nyufa za matofali, uharibifu wa hali ya hewa na kusogea kwa ukuta
+      blocks:
+        - heading: Kasoro za kawaida
+          body: >-
+            Nyufa za mlalo, za hatua na za wima; matofali yaliyochakaa au kuwa poda; viungo vya
+            chokaa vilivyoshindwa; mapambo yenye matundu; unyevu na chumvi; ukosefu wa viungo vya
+            kuunganisha; kusogea na kupinda kwa ukuta.
+        - heading: Njia za ukarabati
+          body: >-
+            Kuingiza nyufa, kuingiza chokaa kwa shinikizo, safu za saruji za uwezo mkubwa wa
+            kujinyoosha, viungo vipya vya ukuta, nguzo za kimuundo, kurekebisha mwelekeo, msaada wa
+            ukuta unaobeba mzigo na kujenga upya kwa udhibiti pale uharibifu ni mkubwa.
+    - index: '02'
+      title: Miundo ya mbao
+      image: /assets/images/cms/conditions/items/1/image.png
+      imageAlt: Uozo wa mbao, uharibifu wa mchwa na kupasuka
+      blocks:
+        - heading: Kasoro za kawaida
+          body: >-
+            Vipengele vilivyolainishwa na unyevu au vilioza, mashambulizi ya mchwa, upotevu wa
+            sehemu, kupasuka, kupinda kupita kiasi, viungo vilivyolegea na uozo pale mbao
+            inapokaa kwenye matofali yenye unyevu.
+        - heading: Njia za ukarabati
+          body: >-
+            Kudhibiti chanzo cha unyevu, kurekebisha au kubadilisha vipengele vya ndani,
+            uimarishaji kwa vibao vya chuma, uimarishaji wa viungo, kuongeza viunga, matibabu ya
+            kuzuia uozo na kutenganisha vyema na matofali yenye unyevu.
+    - index: '03'
+      title: Fremu za saruji zilizoimarishwa
+      image: /assets/images/cms/conditions/items/2/image.png
+      imageAlt: Kupasuka kwa saruji, kumwaga na kutu ya nguo za chuma
+      blocks:
+        - heading: Kasoro za kawaida
+          body: >-
+            Kupasuka kwa mihimili na sakafu, kupondwa kwa nguzo, kumwaga kwa saruji, nguo za chuma
+            zilizo wazi au zenye kutu, kupinda kupita kiasi, mashimo (honeycombing), viungo
+            hafifu na ukosefu wa ulinzi wa kutosha dhidi ya tetemeko.
+        - heading: Njia za ukarabati
+          body: >-
+            Kuingiza nyufa, ukarabati wa saruji, uimarishaji kwa CFRP au chuma kilichounganishwa,
+            kuongeza sehemu, kuweka nguo za chuma, kufunika nguzo kwa chuma au kubadilisha nguzo
+            kwa hatua, uimarishaji wa viungo na ulinzi dhidi ya kutu.
+    - index: '04'
+      title: Miundo ya chuma
+      image: /assets/images/cms/conditions/items/3/image.png
+      imageAlt: Kutu ya chuma, kupinda na uharibifu wa viungo
+      blocks:
+        - heading: Kasoro za kawaida
+          body: >-
+            Kutu na upotevu wa sehemu, vipengele vilivyopinda, kupinda kwa ndani, nyufa za
+            uchovu, bolti zilizolegea, weld mbovu, viungo vilivyoharibika na uwezo mdogo wa
+            kubeba mizigo mipya ya paa au mitambo.
+        - heading: Njia za ukarabati
+          body: >-
+            Kuondoa kutu na kulinda, vibao vya kuimarisha kwa bolti au weld, kubadilisha
+            vipengele, kuongeza viunga, kuboresha viungo, kuimarisha purlins, kugawanya mzigo
+            upya na msaada wa muda unaodhibitiwa.
+    - index: '05'
+      title: Msingi
+      image: /assets/images/cms/conditions/items/4/image.png
+      imageAlt: Nyufa za kukaa chini, kuzunguka kwa msingi na sakafu isiyo sawa
+      blocks:
+        - heading: Kasoro za kawaida
+          body: >-
+            Kukaa chini kwa viwango tofauti, nyufa za mlalo kwenye kuta, sakafu isiyo sawa,
+            kuzunguka kwa msingi, uwezo mdogo wa kubeba, mmomonyoko, kulainishwa kwa udongo kwa
+            maji na uharibifu wa saruji ya msingi.
+        - heading: Njia za ukarabati
+          body: >-
+            Uchunguzi wa udongo na mifereji ya maji, uimarishaji wa msingi, kupanua msingi,
+            rundo ndogo au msaada wa ndani, kuingiza chokaa kwa shinikizo, ukarabati wa saruji
+            iliyoimarishwa, ufuatiliaji wa kukaa chini, kurekebisha na kuweka muundo sawa.
+    - index: '06'
+      title: Upanuzi wa nafasi na mabadiliko ya matumizi
+      image: /assets/images/cms/conditions/items/5/image.png
+      imageAlt: Vikwazo vya kimuundo vinavyoathiri upanuzi wa nafasi
+      blocks:
+        - heading: Mahitaji ya kawaida
+          body: >-
+            Kuondoa kuta zinazobeba mzigo, kufungua matundu makubwa, kubadilisha mpangilio wa
+            vyumba, kuunganisha nafasi, kuongeza sakafu au mitambo na kubadilisha jengo kwa
+            matumizi mapya ya kibiashara au ya taasisi.
+        - heading: Njia za ukarabati
+          body: >-
+            Msaada wa muda, mihimili ya kuhamisha mzigo na fremu, uthibitisho wa njia ya mzigo,
+            kubadilisha ukuta kwa mhimili, nguzo mpya, uimarishaji wa msingi wa ndani,
+            kubomoa kwa hatua na ufuatiliaji wa ujenzi.
+    - index: '07'
+      title: Ongezeko la uwezo wa kubeba
+      image: /assets/images/cms/conditions/items/6/image.png
+      imageAlt: Kasoro za sakafu, paa na nguzo zilizozidiwa mzigo
+      blocks:
+        - heading: Mahitaji ya kawaida
+          body: >-
+            Mizigo mikubwa ya kuhifadhi, watu wengi, mitambo, paneli za sola, matanki ya maji au
+            paa; mabadiliko ya matumizi; mtetemo mkubwa; au vipengele vilivyopo visivyokidhi
+            uwezo unaohitajika.
+        - heading: Njia za ukarabati
+          body: >-
+            Uimarishaji kwa CFRP, chuma kilichounganishwa au kilichofungwa, kuongeza sehemu,
+            kuongeza nguo za chuma na viunga, kuboresha vipengele vya chuma, uimarishaji wa
+            msingi, kugawanya mzigo upya na majaribio ya uthibitisho.
+
+materials:
+  eyebrow: Vifaa, chapa na vifaa maalum
+  title: Mifumo iliyoidhinishwa, inayosaidiwa na zana za kitaalamu na ufungaji unaodhibitiwa.
+  body: >-
+    Chapa za mwisho na madaraja ya bidhaa huchaguliwa kwa kuzingatia maelezo ya mhandisi,
+    hali ya uso wa saruji, mahitaji ya majaribio na upatikanaji wa ndani uliothibitishwa.
+  brandsTitle: Chapa za kawaida za vifaa
+  brands:
+    - name: Sika
+      body: ukarabati wa saruji, kuunganisha, kuingiza, kuzuia maji na mifumo ya uimarishaji wa CFRP.
+    - name: Hilti
+      body: nguo za chuma zilizowekwa baada ya saruji, nanga za kemikali, mifumo ya kufunga na zana za kitaalamu.
+    - name: Bidhaa sawa iliyoidhinishwa
+      body: >-
+        mifumo mingine ya kimataifa au inayopatikana ndani inaweza kupendekezwa baada ya mapitio ya
+        data ya kiufundi na upatanifu.
+  selectionTitle: Kanuni ya kuchagua
+  selectionBody: >-
+    Hakuna bidhaa inayochaguliwa kwa jina la chapa pekee. Uwezo wa kubeba uliohesabiwa,
+    uidhinishaji, upatanifu na uso, hali ya ufungaji, muda wa kuhifadhi na msaada wa kiufundi
+    wa ndani lazima vithibitishwe.
+  equipment:
+    - title: Vifaa vya ukaguzi
+      image: /assets/images/cms/materials/equipment/0/image.png
+      imageAlt: Seti ya vifaa vya kitaalamu vya ukaguzi wa miundo
+      items:
+        - Kichunguzi cha nguo za chuma na kipimo cha kifuniko
+        - Nyundo ya kurudia ya saruji
+        - Vifaa vya kupima kwa sauti ya juu (ultrasonic)
+        - Hadubini ya kupima upana wa nyufa
+        - Kiwango cha laser na ufuatiliaji wa mwendo
+        - Kipimo cha unyevu na zana za kutathmini kutu
+    - title: Vifaa vya uimarishaji
+      image: /assets/images/cms/materials/equipment/1/image.png
+      imageAlt: Seti ya vifaa vya kitaalamu vya uimarishaji wa miundo
+      items:
+        - Pampu za kuingiza nyufa kwa shinikizo la chini
+        - Vifaa vya kusambaza gundi na chokaa
+        - Mashine za kuchimba kwa almasi
+        - Mashine za kusafisha saruji na kuvuta vumbi
+        - Zana za kusukuma CFRP na kutayarisha uso
+        - Jeki za majimaji na mifumo ya msaada wa muda
+    - title: Vifaa vya kudhibiti ubora
+      image: /assets/images/cms/materials/equipment/2/image.png
+      imageAlt: Seti ya vifaa vya kudhibiti ubora wa uimarishaji
+      items:
+        - Vifaa vya kujaribu kuvuta nanga
+        - Zana za kufunga zinazodhibiti torque
+        - Udhibiti wa joto na kuchanganya gundi
+        - Ufuatiliaji wa kundi na muda wa matumizi wa vifaa
+        - Rekodi za ukaguzi kwa picha
+        - Zana zilizosawazishwa za kupima na kukubali kazi
+  note: >-
+    Marejeleo ya chapa yanaonyesha uwezo wa mifumo inayowakilishwa na si ahadi ya ugavi wa kipekee.
+    Bidhaa bado zinategemea idhini ya mradi na upatikanaji wa manunuzi.
+
+experience:
+  eyebrow: Uzoefu uliochaguliwa
+  title: Uzoefu wa miradi nchini China, Kenya na Afrika Mashariki
+  body: >-
+    Mbinu za uimarishaji zinazowakilisha, ubora wa kazi na hali za matumizi za kikanda.
+    Majina ya miradi binafsi na mahali kamili hayafichuliwi kwa makusudi.
+  feature:
+    label: Ukarabati wa shule na uimarishaji dhidi ya tetemeko
+    title: Mradi wa Ukarabati wa Shule ya Yunxi, Wilaya ya Honggutan
+    body: >-
+      Ukarabati na uimarishaji wa majengo ya kufundisha yaliyopo wakati sehemu za shule
+      zikiendelea kutumika. Kazi ziliboresha uwezo wa kubeba, utendaji dhidi ya tetemeko na
+      nafasi zinazohitajika kwa shughuli mpya za kufundisha.
+    points:
+      - CFRP, kuunganisha chuma kwa kuingiza chokaa kwa shinikizo na kuongeza sehemu
+      - Rundo za nanga za shinikizo tuli na uimarishaji wa matofali dhidi ya tetemeko
+      - Kazi kwa hatua, udhibiti wa vumbi na kelele, na ukaguzi wa kazi zilizofichwa
+    image: /assets/images/cms/experience/feature/image.jpg
+    imageAlt: Fundi akifanya uimarishaji wa kimuundo katika mradi wa ukarabati wa Shule ya Yunxi
+  projects:
+    - title: Ukarabati wa hoteli
+      subtitle: Kubadilisha matumizi ya jengo lililopo
+      image: /assets/images/cms/experience/projects/0/image.jpg
+      imageAlt: Mradi wa ukarabati wa hoteli ya ghorofa nyingi
+    - title: Kuboresha jengo la shule
+      subtitle: Kazi za kimuundo kwa hatua
+      image: /assets/images/cms/experience/projects/1/image.jpg
+      imageAlt: Fundi akifanya uimarishaji wa mihimili na nguzo
+    - title: Ukarabati wa jengo la viwanda
+      subtitle: CFRP na matibabu ya nyufa
+      image: /assets/images/cms/experience/projects/2/image.jpg
+      imageAlt: Kazi ya uimarishaji wa CFRP kwenye muundo wa saruji
+    - title: Kuboresha paa la chuma
+      subtitle: Kuboresha uwezo wa kubeba na viungo
+      image: /assets/images/cms/experience/projects/3/image.jpg
+      imageAlt: Uimarishaji wa muundo wa paa la chuma
+  disclaimer: >-
+    Picha za miradi na matumizi ni za kuwakilisha. Majina ya miradi binafsi na mahali
+    hayafichuliwi kwa makusudi.
+
+process:
+  eyebrow: Utekelezaji uliounganishwa
+  title: Ukaguzi, usanifu na ujenzi katika mtiririko mmoja ulioratibiwa.
+  body: >-
+    Timu moja inahakikisha maamuzi ya kiufundi, hali za uwanjani na ubora wa kazi
+    vinaendana kutoka uchunguzi wa kwanza hadi ukabidhiji wa mwisho.
+  integration:
+    - index: '01'
+      icon: '⌕'
+      title: Ukaguzi
+      body: Kagua muundo, chora ramani ya kasoro, thibitisha vipimo na tambua chanzo kikuu.
+      meta: Ripoti ya hali • Mpango wa majaribio • Rekodi za picha
+    - index: '02'
+      icon: '◈'
+      title: Usanifu
+      body: Andaa mpango wa uimarishaji unaotekelezeka, maelezo ya mbinu na wigo ulioratibiwa.
+      meta: Dhana ya kiufundi • Maelezo • Orodha ya vifaa
+    - index: '03'
+      icon: '▤'
+      title: Ujenzi
+      body: Fanya, kagua na andika kazi zilizoidhinishwa kwa utekelezaji uliodhibitiwa.
+      meta: Udhibiti wa afya na usalama • Hatua za kusimamisha kazi • Faili la ukabidhiji
+  detailTitle: Mtiririko wa kina wa mradi
+  steps:
+    - index: '1'
+      title: Mazungumzo ya kwanza
+      body: Aina ya jengo, tatizo linaloonekana, mahali, uharaka na michoro iliyopo.
+    - index: '2'
+      title: Uchunguzi wa uwanjani
+      body: Uchunguzi wa hali, vipimo, picha na mahitaji ya majaribio.
+    - index: '3'
+      title: Mwitikio wa kiufundi
+      body: Mhandisi aliyesajiliwa wa ndani, dhana ya uimarishaji, wigo na bajeti.
+    - index: '4'
+      title: Kazi za kitaalamu
+      body: Vifaa vilivyoidhinishwa, maelezo ya mbinu, udhibiti wa usalama na hatua za ukaguzi.
+    - index: '5'
+      title: Uthibitisho na ukabidhiji
+      body: Majaribio, rekodi za picha, hati za kukamilisha na ushauri wa matengenezo.
+
+about:
+  eyebrow: Kwa nini tuchague
+  title: Wataalamu wa miundo wanaolinda jengo, watu na ratiba.
+  body: >-
+    HY Structural Reinforcement Engineering Limited inazingatia uimarishaji na ukarabati wa
+    kitaalamu badala ya kuichukulia kazi ya kimuundo kama matengenezo ya kawaida ya jengo.
+    Timu yetu ya ndani na ya kimataifa inaunganisha tathmini ya hali, usanifu wa kiufundi,
+    uchaguzi wa vifaa, usimamizi wa uwanjani na udhibiti wa ubora unaoandikwa.
+  points:
+    - index: '01'
+      title: Utambuzi wa kitaalamu
+      body: Tunatambua chanzo cha kimuundo kabla ya kuchagua ukarabati.
+    - index: '02'
+      title: Utekelezaji uliounganishwa
+      body: Maamuzi ya ukaguzi, usanifu na ujenzi yanabaki yameratibiwa.
+    - index: '03'
+      title: Utekelezaji unaodhibiti hatari
+      body: Hatua za kusimamisha kazi, kazi za muda na rekodi hupunguza hatari za uwanjani.
+    - index: '04'
+      title: Ushirikiano wa ndani
+      body: Wataalamu wa Kenya na wadau wa mradi wanabaki karibu na utekelezaji.
+  riskTitle: 'Kwa nini uzoefu wa kitaalamu ni muhimu:'
+  riskBody: >-
+    Uimarishaji wa miundo unahusisha njia za mzigo, msaada wa muda, upatanifu wa vifaa na
+    kasoro zilizofichwa. Ukifanywa na mkandarasi asiye mtaalamu bila tathmini na usanifu
+    sahihi, kazi inaweza kuficha uharibifu, kuzidisha mzigo kwa vipengele vya jirani,
+    kuunda hali za muda zisizo salama, kushindwa mapema au kumweka mmiliki katika hatari ya
+    uidhinishaji na dhima.
+  image: /assets/images/cms/about/image.png
+  imageAlt: Wahandisi wa miundo wa China na Kenya wakishirikiana katika ofisi ya Nairobi
+
+contact:
+  eyebrow: Anza na tatizo
+  title: Tuambie unachokiona katika muundo.
+  body: >-
+    Tuma mahali, aina ya jengo, picha na maelezo mafupi. Tutasaidia kubaini hatua inayofaa.
+  email: 55652140@qq.com
+  website: https://www.huayejiagu.com
+  websiteLabel: www.huayejiagu.com
+  markets: Block D 1124 Laikipia Rd, Nairobi
+  form:
+    nameLabel: Jina
+    companyLabel: Kampuni
+    emailLabel: Barua pepe
+    phoneLabel: Simu / WhatsApp
+    messageLabel: Tatizo la kimuundo ni gani?
+    messagePlaceholder: Aina ya jengo, mahali, uharibifu unaoonekana na muda
+    submitLabel: Andaa barua pepe ya kuuliza
+    hint: Fomu hii itafungua programu yako ya barua pepe na maelezo yamejazwa, ili uweze pia kuambatanisha picha.
+  floatLabel: Tuma barua pepe kwa wahandisi
+
+footer:
+  tagline: Uimarishaji wa miundo • Ukarabati • Uboreshaji
+  copyright: © 2026 HY Structural Reinforcement Engineering Limited

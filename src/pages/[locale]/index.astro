@@ -1,0 +1,18 @@
+---
+import SiteHome from '../../components/SiteHome.astro';
+import { getLocaleConfig } from '../../lib/site-content';
+
+export async function getStaticPaths() {
+  const { defaultLocale, locales } = await getLocaleConfig();
+  return locales
+    .filter((locale) => locale.code.toLowerCase() !== defaultLocale.toLowerCase())
+    .map((locale) => ({ params: { locale: locale.code } }));
+}
+
+const { locale } = Astro.params;
+if (!locale) {
+  throw new Error('Locale not found');
+}
+---
+
+<SiteHome locale={locale} />

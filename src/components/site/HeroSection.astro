@@ -1,0 +1,71 @@
+---
+import type { SitePageContent } from '../../lib/site-content';
+
+interface Props {
+  hero: SitePageContent['hero'];
+}
+
+const { hero } = Astro.props;
+const stages = hero.stages || [];
+---
+
+<section class="hero" id="top">
+  <div class="wrap hero__grid">
+    <div class="hero__copy reveal">
+      {hero.eyebrow && <p class="eyebrow">{hero.eyebrow}</p>}
+
+      {(hero.stagesLabel || stages.length > 0) && (
+        <div class="hero__stages">
+          {hero.stagesLabel && <span>{hero.stagesLabel}</span>}
+          {stages.map((stage, index) => (
+            <>
+              <i aria-hidden="true">{index === 0 ? '·' : '→'}</i>
+              <span>{stage}</span>
+            </>
+          ))}
+        </div>
+      )}
+
+      <h1>
+        {hero.title}
+        {hero.titleAccent && <em>{hero.titleAccent}</em>}
+      </h1>
+
+      {hero.subtitle && <p class="hero__subtitle">{hero.subtitle}</p>}
+      {hero.lead && <p class="hero__lead">{hero.lead}</p>}
+
+      {(hero.applications || []).length > 0 && (
+        <div class="hero__apps">
+          {hero.applicationsLabel && <span class="hero__apps-label">{hero.applicationsLabel}</span>}
+          <ul>
+            {hero.applications.map((item) => (
+              <li><a href={item.href || '#conditions'}>{item.label}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      <div class="hero__actions">
+        {hero.primaryLabel && (
+          <a class="btn btn--primary" href={hero.primaryHref || '#contact'}>{hero.primaryLabel}</a>
+        )}
+        {hero.secondaryLabel && (
+          <a class="btn btn--ghost" href={hero.secondaryHref || '#services'}>{hero.secondaryLabel}</a>
+        )}
+      </div>
+
+      {(hero.trust || []).length > 0 && (
+        <ul class="trust-list">
+          {hero.trust.map((item) => <li>{item}</li>)}
+        </ul>
+      )}
+    </div>
+
+    <div class="hero__media reveal">
+      {hero.image && (
+        <img src={hero.image} alt={hero.imageAlt || ''} width="1536" height="1024" loading="eager" />
+      )}
+      {hero.imageNote && <span class="hero__note">{hero.imageNote}</span>}
+    </div>
+  </div>
+</section>

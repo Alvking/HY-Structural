@@ -1,0 +1,78 @@
+---
+import type { SiteSettings } from '../lib/site-content';
+
+interface Props {
+  site: SiteSettings;
+  locale: string;
+}
+
+const { site } = Astro.props;
+const shouldRender = Boolean(
+  site.brandName ||
+  site.footerBody ||
+  site.footerContactValue ||
+  site.copyrightLine ||
+  site.footerPhone ||
+  site.footerEmail ||
+  site.footerMotto,
+);
+const motto = site.footerMotto || '';
+---
+
+{shouldRender && (
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      {site.brandName && <h3 class="footer-title">{site.brandName}</h3>}
+      {site.footerBody && <p class="footer-desc">{site.footerBody}</p>}
+      {site.footerContactValue && <p class="contact-value">{site.footerContactValue}</p>}
+      {site.footerPhone && <p class="contact-phone">📞 {site.footerPhone}</p>}
+      {site.footerEmail && <p class="contact-email">✉️ {site.footerEmail}</p>}
+      {motto && <p class="footer-motto">{motto}</p>}
+      {site.copyrightLine && <p class="copyright">{site.copyrightLine}</p>}
+    </div>
+  </footer>
+)}
+
+<style>
+  .site-footer {
+    background: var(--color-text);
+    color: white;
+    padding: 4rem 0;
+  }
+
+  .footer-inner {
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .footer-desc {
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 40rem;
+    line-height: 1.8;
+  }
+
+  .contact-value {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-family: var(--font-serif);
+  }
+
+  .copyright {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .contact-phone,
+  .contact-email,
+  .footer-motto {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+  }
+</style>

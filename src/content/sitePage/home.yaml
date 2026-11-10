@@ -1,0 +1,575 @@
+seoTitle: Structural Strengthening & Building Rehabilitation in Kenya
+seoDescription: >-
+  Structural strengthening, CFRP reinforcement, crack repair, concrete
+  rehabilitation, steel roof upgrades and foundation remediation for buildings
+  and industrial facilities in Kenya.
+keywords:
+  - structural strengthening Kenya
+  - CFRP Kenya
+  - crack repair Nairobi
+  - concrete repair Kenya
+  - building rehabilitation Nairobi
+  - steel roof strengthening
+  - foundation repair Kenya
+ogTitle: HY Structural Reinforcement Engineering Limited | Kenya
+ogDescription: Practical structural strengthening and rehabilitation solutions for Kenya.
+brand:
+  name: HY Structural Reinforcement Engineering Limited
+  shortName: HY STRUCTURAL
+  legalName: REINFORCEMENT ENGINEERING LIMITED
+  mark: HY
+  tagline: Structural strengthening • Rehabilitation • Retrofit
+  area: Kenya
+  email: huayestructure@gmail.com
+  website: https://www.hy-structural.com/
+  websiteLabel: https://www.hy-structural.com/
+utilityBar:
+  message: Structural strengthening & rehabilitation in Kenya
+  links:
+    - label: Technical capability
+      href: '#services'
+    - label: Contact our team
+      href: '#contact'
+hero:
+  eyebrow: Structural strengthening • Kenya
+  stagesLabel: STRUCTURAL STRENGTHENING
+  stages:
+    - INSPECT
+    - DESIGN
+    - BUILD
+  title: Structural Doctors.
+  titleAccent: Guardians of Buildings.
+  subtitle: Integrated inspection, design and construction services
+  lead: >-
+    From structural defects and engineering assessment to strengthening design,
+    specialist construction and documented handover.
+  applicationsLabel: APPLICATIONS
+  applications:
+    - label: Masonry structures
+      href: '#conditions'
+    - label: Timber structures
+      href: '#conditions'
+    - label: Concrete frames
+      href: '#conditions'
+    - label: Steel structures
+      href: '#conditions'
+    - label: Foundations
+      href: '#conditions'
+    - label: Space expansion
+      href: '#conditions'
+    - label: Load upgrades
+      href: '#conditions'
+  primaryLabel: Discuss your building
+  primaryHref: '#contact'
+  secondaryLabel: Explore solutions
+  secondaryHref: '#services'
+  trust:
+    - Assessment-to-handover coordination
+    - Specialist strengthening methods
+    - Documented quality control
+  image: /assets/images/cms/hero/image.png
+  imageAlt: >-
+    Worker in a reflective safety vest applying carbon-fibre strengthening to
+    damaged reinforced concrete
+  imageNote: AI concept image • representative strengthening work
+intro:
+  eyebrow: Built around your project
+  title: One technical partner from diagnosis to durable repair.
+  body: >-
+    Choose the path that matches your building challenge. We coordinate
+    investigation, engineering, materials, site controls and handover around a
+    clear scope.
+proof:
+  - value: '2012'
+    label: Company established
+  - value: 1,000+
+    label: Assignments completed in China
+  - value: Integrated
+    label: Technical and construction delivery
+  - value: Kenya
+    label: Local partnership-led market entry
+services:
+  eyebrow: What we do
+  title: Specialist solutions for existing structures
+  body: >-
+    We focus on targeted interventions that improve capacity, durability and
+    safe use while limiting disruption to building operations.
+  items:
+    - index: '01'
+      icon: ⌁
+      title: CFRP & bonded strengthening
+      body: >-
+        Carbon-fibre fabric, laminates and bonded steel solutions for beams,
+        slabs and columns.
+      image: /assets/images/cms/services/items/0/image.png
+      imageAlt: CFRP strengthening work on a concrete beam
+    - index: '02'
+      icon: ▱
+      title: Crack & concrete repair
+      body: >-
+        Crack mapping, resin injection, corrosion treatment, patch repair and
+        protective reinstatement.
+      image: /assets/images/cms/services/items/1/image.png
+      imageAlt: Worker repairing cracked concrete
+    - index: '03'
+      icon: ↗
+      title: Alterations & change of use
+      body: >-
+        Structural support for openings, wall removal, higher loads, equipment
+        installation and refurbishment.
+      image: /assets/images/cms/services/items/2/image.png
+      imageAlt: Worker installing temporary support during a building alteration
+    - index: '04'
+      icon: ▥
+      title: Steel & rooftop solar upgrades
+      body: >-
+        Assessment coordination and reinforcement of purlins, beams, bracing and
+        connections.
+      image: /assets/images/cms/services/items/3/image.png
+      imageAlt: Workers strengthening a corroded steel roof
+    - index: '05'
+      icon: ⌂
+      title: Foundations & settlement
+      body: >-
+        Investigation support, underpinning concepts, foundation strengthening
+        and settlement-related repairs.
+      image: /assets/images/cms/services/items/4/image.png
+      imageAlt: Worker repairing a settled foundation
+    - index: '06'
+      icon: ✓
+      title: Inspection & quality verification
+      body: >-
+        Site records, material traceability, hold points, testing coordination
+        and structured handover.
+      image: /assets/images/cms/services/items/5/image.png
+      imageAlt: Engineer inspecting damaged concrete
+quickLinks:
+  - index: '01'
+    title: Explore solutions
+    body: CFRP, concrete, steel and foundations
+    href: '#services'
+  - index: '02'
+    title: See our experience
+    body: Methods and workmanship from completed projects
+    href: '#experience'
+  - index: '03'
+    title: Request a site review
+    body: Share photos, drawings and your project brief
+    href: '#contact'
+technologies:
+  eyebrow: Professional strengthening technologies
+  title: Match the repair method to the structural condition.
+  body: >-
+    Each technique is selected after inspection and engineering review. The
+    examples below show typical quality conditions that may require the
+    corresponding intervention.
+  conditionLabel: 'Typical condition:'
+  items:
+    - index: '01'
+      title: Steel plate bonding
+      condition: >-
+        Beam or slab capacity is inadequate, with limited space for heavy
+        rebuilding.
+      image: /assets/images/cms/technologies/items/0/image.png
+      imageAlt: Steel plate pressure-grouting installation
+    - index: '02'
+      title: Bonded steel strengthening
+      condition: >-
+        Local bending or shear deficiency, overloaded members or damaged
+        concrete sections.
+      image: /assets/images/cms/technologies/items/1/image.png
+      imageAlt: Bonded steel strengthening installation on a concrete column
+    - index: '03'
+      title: Carbon-fibre fabric (CFRP)
+      condition: >-
+        Cracked beams, slabs or columns requiring lightweight capacity
+        improvement with minimal disruption.
+      image: /assets/images/cms/technologies/items/2/image.png
+      imageAlt: Carbon-fibre fabric strengthening of a concrete column
+    - index: '04'
+      title: Section enlargement
+      condition: >-
+        Significant loss of concrete section, insufficient reinforcement or
+        major load increase.
+      image: /assets/images/cms/technologies/items/3/image.png
+      imageAlt: Concrete section enlargement work
+    - index: '05'
+      title: Rebar anchoring
+      condition: >-
+        New members, extensions or connections need reliable reinforcement
+        anchorage into existing concrete.
+      image: /assets/images/cms/technologies/items/4/image.png
+      imageAlt: Post-installed rebar anchoring installation
+    - index: '06'
+      title: Crack repair & injection
+      condition: >-
+        Active or dormant cracks, water ingress, honeycombing or
+        corrosion-related deterioration.
+      image: /assets/images/cms/technologies/items/5/image.png
+      imageAlt: Crack injection and concrete repair
+    - index: '07'
+      title: Load-bearing wall conversion
+      condition: >-
+        A load-bearing wall must be opened or removed to create a beam-supported
+        layout.
+      image: /assets/images/cms/technologies/items/6/image.png
+      imageAlt: Load-bearing wall conversion with a new transfer beam
+    - index: '08'
+      title: High-ductility concrete
+      condition: >-
+        Seismic, impact or movement-prone zones require improved deformation
+        tolerance and crack control.
+      image: /assets/images/cms/technologies/items/7/image.png
+      imageAlt: High-ductility concrete overlay installation
+    - index: '09'
+      title: Concrete column replacement
+      condition: >-
+        A column has severe crushing, corrosion or loss of section and requires
+        staged replacement.
+      image: /assets/images/cms/technologies/items/8/image.png
+      imageAlt: >-
+        Staged concrete column replacement with temporary shoring and new
+        concrete
+    - index: '10'
+      title: Static-pressure anchor piles
+      condition: >-
+        Foundation settlement, insufficient bearing capacity or
+        restricted-access underpinning where low vibration and compact equipment
+        are required.
+      image: /assets/images/cms/technologies/items/9/image.png
+      imageAlt: Static-pressure anchor pile underpinning installation
+conditions:
+  eyebrow: Common defects & change-of-use
+  title: Recognise the condition. Select the right intervention.
+  body: >-
+    Typical symptoms and treatment routes are grouped by structural system.
+    Final solutions require site inspection, testing and engineering review.
+  items:
+    - index: '01'
+      title: Masonry structures
+      image: /assets/images/cms/conditions/items/0/image.png
+      imageAlt: Masonry cracks, weathering and wall movement
+      blocks:
+        - heading: Common defects
+          body: >-
+            Diagonal, stepped and vertical compression cracks; weathered or
+            powdery masonry; failed mortar joints; hollow finishes; dampness and
+            salt efflorescence; missing ties; wall movement and inclination.
+        - heading: Treatment methods
+          body: >-
+            Crack injection, pressure grouting, high-ductility concrete
+            overlays, new wall ties, structural or buttress columns, correction
+            and re-alignment, load-bearing wall support and controlled
+            rebuilding where deterioration is severe.
+    - index: '02'
+      title: Timber structures
+      image: /assets/images/cms/conditions/items/1/image.png
+      imageAlt: Timber decay, termite damage and splitting
+      blocks:
+        - heading: Common defects
+          body: >-
+            Moisture-softened or decayed members, termite attack, section loss,
+            splitting, excessive deflection, loose joints and decay where timber
+            bears on damp masonry.
+        - heading: Treatment methods
+          body: >-
+            Moisture-source control, local member repair or replacement, steel
+            plate or section reinforcement, connection strengthening, added
+            supports, preservative treatment and improved separation from damp
+            masonry.
+    - index: '03'
+      title: Reinforced-concrete frames
+      image: /assets/images/cms/conditions/items/2/image.png
+      imageAlt: Concrete cracking, spalling and reinforcement corrosion
+      blocks:
+        - heading: Common defects
+          body: >-
+            Beam and slab cracking, column crushing, concrete spalling, exposed
+            or corroded reinforcement, excessive deflection, honeycombing, weak
+            joints and insufficient seismic detailing.
+        - heading: Treatment methods
+          body: >-
+            Crack injection, concrete repair, CFRP or bonded steel
+            strengthening, section enlargement, rebar anchoring, column
+            jacketing or staged concrete replacement, joint strengthening and
+            corrosion protection.
+    - index: '04'
+      title: Steel structures
+      image: /assets/images/cms/conditions/items/3/image.png
+      imageAlt: Steel corrosion, buckling and connection damage
+      blocks:
+        - heading: Common defects
+          body: >-
+            Corrosion and section loss, deflected members, local buckling,
+            fatigue cracking, loose bolts, poor welds, damaged connections and
+            insufficient capacity for new rooftop or equipment loads.
+        - heading: Treatment methods
+          body: >-
+            Corrosion removal and protection, bolted or welded strengthening
+            plates, member replacement, added bracing, connection upgrades,
+            purlin reinforcement, load redistribution and controlled temporary
+            support.
+    - index: '05'
+      title: Foundations
+      image: /assets/images/cms/conditions/items/4/image.png
+      imageAlt: Settlement cracks, footing rotation and uneven floors
+      blocks:
+        - heading: Common defects
+          body: >-
+            Differential settlement, diagonal wall cracking, uneven floors,
+            footing rotation, inadequate bearing capacity, erosion,
+            water-related soil softening and foundation concrete deterioration.
+        - heading: Treatment methods
+          body: >-
+            Ground and drainage investigation, underpinning, footing
+            enlargement, micropiles or local support, pressure grouting,
+            reinforced-concrete repair, settlement monitoring, correction and
+            structural re-levelling.
+    - index: '06'
+      title: Space expansion & change-of-use
+      image: /assets/images/cms/conditions/items/5/image.png
+      imageAlt: Structural constraints affecting space expansion
+      blocks:
+        - heading: Typical requirements
+          body: >-
+            Removing load-bearing walls, creating larger openings, changing room
+            layouts, connecting spaces, adding floors or equipment and adapting
+            buildings to a new commercial or institutional use.
+        - heading: Treatment methods
+          body: >-
+            Temporary propping, transfer beams and frames, load-path
+            verification, wall replacement with beams, new columns, local
+            foundation strengthening, phased demolition and monitored
+            construction.
+    - index: '07'
+      title: Load-capacity upgrades
+      image: /assets/images/cms/conditions/items/6/image.png
+      imageAlt: Overloaded slab, roof and column defects
+      blocks:
+        - heading: Typical requirements
+          body: >-
+            Higher storage, occupancy, machinery, solar-panel, water-tank or
+            rooftop loads; changed design use; excessive vibration; or existing
+            members that do not satisfy the required capacity.
+        - heading: Treatment methods
+          body: >-
+            CFRP strengthening, bonded or encased steel, section enlargement,
+            added reinforcement and supports, steel-member upgrades, foundation
+            strengthening, load redistribution and verification testing.
+materials:
+  eyebrow: Materials, brands & specialist equipment
+  title: >-
+    Approved systems supported by professional tools and controlled
+    installation.
+  body: >-
+    Final brands and product grades are selected against the engineer's
+    specification, substrate condition, test requirements and verified local
+    availability.
+  brandsTitle: Representative material brands
+  brands:
+    - name: Sika
+      body: >-
+        concrete repair, bonding, injection, waterproofing and CFRP
+        strengthening systems.
+    - name: Hilti
+      body: >-
+        post-installed rebar, chemical anchors, fastening systems and
+        professional installation tools.
+    - name: Approved equivalent
+      body: >-
+        alternative international or locally available systems may be proposed
+        after technical-data and compatibility review.
+  selectionTitle: Selection principle
+  selectionBody: >-
+    No product is selected by brand name alone. Design capacity, approvals,
+    substrate compatibility, installation conditions, shelf life and local
+    technical support must be verified.
+  equipment:
+    - title: Inspection equipment
+      image: /assets/images/cms/materials/equipment/0/image.png
+      imageAlt: Professional structural inspection equipment set
+      items:
+        - Rebar scanner and cover meter
+        - Concrete rebound hammer
+        - Ultrasonic pulse testing equipment
+        - Crack-width microscope and gauges
+        - Laser level and displacement monitoring
+        - Moisture meter and corrosion assessment tools
+    - title: Strengthening equipment
+      image: /assets/images/cms/materials/equipment/1/image.png
+      imageAlt: Professional structural strengthening equipment set
+      items:
+        - Low-pressure crack-injection pumps
+        - Adhesive and grout dispensing equipment
+        - Diamond coring and drilling machines
+        - Concrete scarifiers and dust extraction
+        - CFRP rollers and substrate preparation tools
+        - Hydraulic jacks and temporary support systems
+    - title: Quality-control equipment
+      image: /assets/images/cms/materials/equipment/2/image.png
+      imageAlt: Professional strengthening quality-control equipment set
+      items:
+        - Anchor pull-out testing equipment
+        - Torque-controlled installation tools
+        - Adhesive temperature and mixing controls
+        - Material batch and expiry tracking
+        - Photographic inspection records
+        - Calibrated measurement and acceptance tools
+  note: >-
+    Brand references indicate representative system capability and do not
+    constitute an exclusive supply commitment. Products remain subject to
+    project approval and procurement availability.
+experience:
+  eyebrow: Selected experience
+  title: Project experience across China, Kenya & East Africa
+  body: >-
+    Representative strengthening methods, workmanship and regional application
+    scenarios. Individual project names and precise locations are intentionally
+    not disclosed.
+  feature:
+    label: School renovation & seismic strengthening
+    title: Honggutan District Yunxi School Renovation Project
+    body: >-
+      Renovation and strengthening of existing teaching buildings while parts of
+      the campus remained operational. The works improved structural capacity,
+      seismic performance and the spaces required for updated teaching
+      functions.
+    points:
+      - CFRP, pressure-grouted steel bonding and section enlargement
+      - Static-pressure anchor piles and masonry seismic strengthening
+      - Phased works, dust and noise controls, and concealed-work inspections
+    image: /assets/images/cms/experience/feature/image.jpg
+    imageAlt: >-
+      Worker carrying out structural strengthening at the Yunxi School
+      renovation project
+  projects:
+    - title: Hotel refurbishment
+      subtitle: Existing-building adaptation
+      image: /assets/images/cms/experience/projects/0/image.jpg
+      imageAlt: Multi-storey hotel refurbishment project
+    - title: School building upgrade
+      subtitle: Phased structural works
+      image: /assets/images/cms/experience/projects/1/image.jpg
+      imageAlt: Worker carrying out beam and column strengthening
+    - title: Industrial building repair
+      subtitle: CFRP and crack treatment
+      image: /assets/images/cms/experience/projects/2/image.jpg
+      imageAlt: CFRP strengthening work on a concrete structure
+    - title: Steel roof upgrade
+      subtitle: Load and connection improvement
+      image: /assets/images/cms/experience/projects/3/image.jpg
+      imageAlt: Steel roof structure strengthening
+  disclaimer: >-
+    Representative project and application imagery. Individual project names and
+    locations are intentionally not disclosed.
+process:
+  eyebrow: Integrated delivery
+  title: Inspection, design and construction in one coordinated workflow.
+  body: >-
+    One team keeps the technical decisions, site conditions and workmanship
+    aligned from the first survey to final handover.
+  integration:
+    - index: '01'
+      icon: ⌕
+      title: Inspection
+      body: >-
+        Survey the structure, map defects, verify dimensions and identify the
+        root cause.
+      meta: Condition report • Test plan • Photo records
+    - index: '02'
+      icon: ◈
+      title: Design
+      body: >-
+        Develop a practical strengthening scheme, method statement and
+        coordinated scope.
+      meta: Engineering concept • Details • Material schedule
+    - index: '03'
+      icon: ▤
+      title: Construction
+      body: >-
+        Install, inspect and document the approved works with controlled site
+        delivery.
+      meta: HSE controls • Hold points • Handover file
+  detailTitle: Detailed project path
+  steps:
+    - index: '1'
+      title: Initial discussion
+      body: >-
+        Building type, observed problem, location, urgency and available
+        drawings.
+    - index: '2'
+      title: Site investigation
+      body: Condition survey, measurements, photographs and testing requirements.
+    - index: '3'
+      title: Engineering response
+      body: >-
+        Local registered-engineer input, strengthening concept, scope and
+        budget.
+    - index: '4'
+      title: Specialist works
+      body: >-
+        Approved materials, method statements, HSE controls and inspection
+        points.
+    - index: '5'
+      title: Verification & handover
+      body: >-
+        Testing, photographic records, completion documents and maintenance
+        advice.
+about:
+  eyebrow: Why choose us
+  title: >-
+    Structural specialists who protect the building, the people and the
+    programme.
+  body: >-
+    HY Structural Reinforcement Engineering Limited focuses on specialist
+    strengthening and rehabilitation rather than treating structural work as
+    ordinary building maintenance. Our local and international team combines
+    condition assessment, engineering design, material selection, site
+    supervision and documented quality control.
+  points:
+    - index: '01'
+      title: Specialist diagnosis
+      body: We identify the structural cause before selecting a repair.
+    - index: '02'
+      title: Integrated delivery
+      body: Inspection, design and construction decisions stay coordinated.
+    - index: '03'
+      title: Risk-controlled execution
+      body: Hold points, temporary works and records reduce avoidable site risk.
+    - index: '04'
+      title: Local collaboration
+      body: Kenyan professionals and project stakeholders remain close to delivery.
+  riskTitle: 'Why specialist experience matters:'
+  riskBody: >-
+    Structural strengthening involves load paths, temporary support, material
+    compatibility and hidden defects. If carried out by a non-specialist
+    contractor without proper assessment and design, the work may conceal
+    damage, overload adjacent members, create unsafe temporary conditions, fail
+    prematurely or expose the owner to approval and liability risks.
+  image: /assets/images/cms/about/image.png
+  imageAlt: Chinese and Kenyan structural engineers collaborating in a Nairobi office
+contact:
+  eyebrow: Start with the problem
+  title: Tell us what you are seeing in the structure.
+  body: >-
+    Send the location, building type, photographs and a short description. We
+    will help identify the appropriate next step.
+  email: huayestructure@gmail.com
+  website: https://www.hy-structural.com/
+  websiteLabel: https://www.hy-structural.com/
+  markets: Block D 1124 Laikipia Rd, Nairobi
+  floatLabel: Email our engineers
+  form:
+    nameLabel: Name
+    companyLabel: Company
+    emailLabel: Email
+    phoneLabel: Phone / WhatsApp
+    messageLabel: What is the structural concern?
+    messagePlaceholder: Building type, location, visible damage and timing
+    submitLabel: Prepare email enquiry
+    hint: >-
+      This form opens your email application with the details filled in, so
+      nothing is lost if you also want to attach photographs.
+footer:
+  tagline: Structural strengthening • Rehabilitation • Retrofit
+  copyright: © 2026 HY Structural Reinforcement Engineering Limited

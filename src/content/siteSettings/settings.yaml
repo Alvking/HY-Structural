@@ -1,0 +1,66 @@
+brandName: HY Structural Reinforcement Engineering Limited
+defaultMetaDescription: >-
+  Structural strengthening, CFRP reinforcement, crack repair, concrete
+  rehabilitation, steel roof upgrades and foundation remediation for buildings
+  and industrial facilities in Kenya.
+defaultLocale: en
+localeCookieName: site_locale
+localeSwitcherLabel: Language
+mobileMenuLabel: Toggle navigation menu
+supportedLocales:
+  - code: en
+    label: English
+  - code: zh-CN
+    label: 简体中文
+  - code: sw
+    label: Kiswahili
+logoPath: /assets/images/cms/logoPath.jpg
+defaultOgImage: /assets/images/cms/defaultOgImage.png
+categoryTranslations: []
+navigation:
+  - label: Technologies
+    href: '#services'
+    isPrimary: false
+  - label: Types
+    href: '#conditions'
+    isPrimary: false
+  - label: Projects
+    href: '#experience'
+    isPrimary: false
+  - label: Process
+    href: '#process'
+    isPrimary: false
+  - label: About Us
+    href: '#about'
+    isPrimary: false
+  - label: Request a site visit
+    href: '#contact'
+    isPrimary: true
+footerBody: >-
+  Specialist structural strengthening, rehabilitation and retrofit for existing
+  buildings and industrial facilities in Kenya, delivered with documented
+  inspection, design and construction control.
+footerLinks:
+  - label: Technologies
+    href: '#services'
+  - label: Structural types
+    href: '#conditions'
+  - label: Projects
+    href: '#experience'
+  - label: Process
+    href: '#process'
+  - label: Contact
+    href: '#contact'
+footerContactLabel: Email
+footerContactValue: huayestructure@gmail.com
+contactPhonePrimary: '0728630800'
+contactPhonePrimaryHref: tel:+254728630800
+contactPhoneSecondary: '0742159128'
+contactPhoneSecondaryHref: tel:+254742159128
+footerAddress: Block D 1124 Laikipia Rd, Nairobi
+footerQuickLinksLabel: Quick links
+footerContactColumnTitle: Contact
+footerPhone: 0728630800 / 0742159128
+footerEmail: huayestructure@gmail.com
+footerMotto: Structural Doctors. Guardians of Buildings.
+copyrightLine: © 2026 HY Structural Reinforcement Engineering Limited

@@ -1,0 +1,55 @@
+---
+import type { SitePageContent } from '../../lib/site-content';
+
+interface Props {
+  materials?: SitePageContent['materials'];
+}
+
+const { materials } = Astro.props;
+---
+
+{materials && (
+  <section class="site-section" id="materials">
+    <div class="wrap">
+      <div class="section-head reveal">
+        {materials.eyebrow && <p class="eyebrow">{materials.eyebrow}</p>}
+        {materials.title && <h2>{materials.title}</h2>}
+        {materials.body && <p>{materials.body}</p>}
+      </div>
+
+      <div class="material-layout">
+        <div class="brand-panel reveal">
+          <h3>{materials.brandsTitle}</h3>
+          <dl>
+            {(materials.brands || []).map((brand) => (
+              <div>
+                <dt>{brand.name}</dt>
+                <dd>{brand.body}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+        <aside class="selection-panel reveal">
+          <h3>{materials.selectionTitle}</h3>
+          <p>{materials.selectionBody}</p>
+        </aside>
+      </div>
+
+      <div class="equipment-grid">
+        {(materials.equipment || []).map((group) => (
+          <article class="equipment-card reveal">
+            <div class="equipment-card__media">
+              <img src={group.image} alt={group.imageAlt || group.title || ''} width="1536" height="1024" loading="lazy" />
+              <span>{group.title}</span>
+            </div>
+            <ul>
+              {(group.items || []).map((entry) => <li>{entry}</li>)}
+            </ul>
+          </article>
+        ))}
+      </div>
+
+      {materials.note && <p class="equipment-note">{materials.note}</p>}
+    </div>
+  </section>
+)}

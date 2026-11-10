@@ -1,0 +1,75 @@
+---
+import type { SitePageContent, SiteSettings } from '../../lib/site-content';
+import { localizeHref, stripLocaleFromPath } from '../../lib/site-content';
+
+interface Props {
+  site: SiteSettings;
+  page: SitePageContent;
+  locale: string;
+  currentPath?: string;
+}
+
+const { site, page, locale, currentPath = '/' } = Astro.props;
+const basePath = stripLocaleFromPath(currentPath, site.supportedLocales);
+const href = (target?: string) =>
+  localizeHref(locale, target || basePath || '/', site.defaultLocale, site.supportedLocales);
+const brand = page.brand || {};
+const links = (site.footerLinks || []).filter((item) => item.label);
+---
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div>
+        <span class="brand">
+          <span class="brand__text">
+            <strong>{brand.shortName || site.brandName}</strong>
+            <small>{brand.legalName}</small>
+          </span>
+        </span>
+        {site.footerBody && <p style="margin-top: 1rem;">{site.footerBody}</p>}
+      </div>
+
+      {links.length > 0 && (
+        <div>
+          <h3>{site.footerQuickLinksLabel || 'Quick links'}</h3>
+          <ul>
+            {links.map((link) => (
+              <li><a href={href(link.href)}>{link.label}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      <div>
+        <h3>{site.footerContactColumnTitle || 'Contact'}</h3>
+        <ul>
+          {site.footerEmail && <li><a href={`mailto:${site.footerEmail}`}>{site.footerEmail}</a></li>}
+          {(site.contactPhonePrimary || site.footerPhone) && (
+            <li class="footer-phones">
+              <a href={site.contactPhonePrimaryHref || `tel:${(site.contactPhonePrimary || '').replace(/[^\d+]/g, '')}`}>
+                {site.contactPhonePrimary || site.footerPhone}
+              </a>
+              {site.contactPhoneSecondary && (
+                <a href={site.contactPhoneSecondaryHref || `tel:${site.contactPhoneSecondary.replace(/[^\d+]/g, '')}`}>
+                  {site.contactPhoneSecondary}
+                </a>
+              )}
+            </li>
+          )}
+          {brand.website && (
+            <li>
+              <a href={brand.website} target="_blank" rel="noopener">{brand.websiteLabel || brand.website}</a>
+            </li>
+          )}
+          {site.footerAddress && <li>{site.footerAddress}</li>}
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <span>{site.copyrightLine || page.footer?.copyright}</span>
+      <span>{page.footer?.tagline || brand.tagline}</span>
+    </div>
+  </div>
+</footer>

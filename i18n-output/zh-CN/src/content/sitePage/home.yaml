@@ -1,0 +1,468 @@
+seoTitle: 肯尼亚结构加固与建筑修复
+seoDescription: >-
+  面向肯尼亚建筑与工业设施的结构加固、碳纤维（CFRP）加固、裂缝修补、混凝土修复、
+  钢结构屋面提升与基础加固服务。
+keywords:
+  - 肯尼亚结构加固
+  - 肯尼亚碳纤维加固
+  - 内罗毕裂缝修补
+  - 肯尼亚混凝土修复
+  - 内罗毕建筑修复
+  - 钢结构屋面加固
+  - 肯尼亚基础加固
+ogTitle: HY Structural Reinforcement Engineering Limited | 肯尼亚
+ogDescription: 面向肯尼亚的实用型结构加固与修复解决方案。
+
+brand:
+  name: HY Structural Reinforcement Engineering Limited
+  shortName: HY STRUCTURAL
+  legalName: REINFORCEMENT ENGINEERING LIMITED
+  mark: HY
+  tagline: Structural strengthening • Rehabilitation • Retrofit
+  area: Kenya
+  email: 55652140@qq.com
+  website: https://www.huayejiagu.com
+  websiteLabel: www.huayejiagu.com
+
+utilityBar:
+  message: 肯尼亚结构加固与建筑修复服务
+  links:
+    - label: 技术能力
+      href: '#services'
+    - label: 联系我们
+      href: '#contact'
+
+hero:
+  eyebrow: 结构加固 • 肯尼亚
+  stagesLabel: 结构加固
+  stages:
+    - 检测
+    - 设计
+    - 施工
+  title: 结构医生
+  titleAccent: 建筑的守护者
+  subtitle: 检测、设计与施工一体化服务
+  lead: 从结构缺陷鉴定与工程评估，到加固设计、专业施工与规范化交付。
+  applicationsLabel: 适用结构
+  applications:
+    - label: 砌体结构
+      href: '#conditions'
+    - label: 木结构
+      href: '#conditions'
+    - label: 混凝土框架
+      href: '#conditions'
+    - label: 钢结构
+      href: '#conditions'
+    - label: 基础
+      href: '#conditions'
+    - label: 空间改造
+      href: '#conditions'
+    - label: 荷载提升
+      href: '#conditions'
+  primaryLabel: 咨询您的建筑问题
+  primaryHref: '#contact'
+  secondaryLabel: 了解解决方案
+  secondaryHref: '#services'
+  trust:
+    - 从评估到交付的全过程统筹
+    - 专业加固工艺
+    - 可追溯的质量控制
+  image: /assets/images/cms/hero/image.png
+  imageAlt: 身穿反光背心的工人在受损钢筋混凝土上粘贴碳纤维加固
+  imageNote: AI 概念图 • 代表性加固作业
+
+intro:
+  eyebrow: 围绕您的项目
+  title: 从诊断到持久修复的单一技术伙伴。
+  body: 选择与您建筑问题相匹配的路径。我们围绕清晰的工作范围，统筹检测、设计、材料、现场控制与交付。
+
+proof:
+  - value: '2012'
+    label: 公司成立
+  - value: 1,000+
+    label: 中国已完成项目
+  - value: 一体化
+    label: 技术与施工统一交付
+  - value: 肯尼亚
+    label: 以本地合作进入市场
+
+services:
+  eyebrow: 我们做什么
+  title: 面向既有结构的专业解决方案
+  body: 我们专注于有针对性地加固，在提升承载力、耐久性与安全使用的同时，尽量减少对建筑运营的干扰。
+  items:
+    - index: '01'
+      icon: '⌁'
+      title: CFRP 与粘钢加固
+      body: 采用碳纤维布、碳纤维板与粘钢方案加固梁、板与柱。
+      image: /assets/images/cms/services/items/0/image.png
+      imageAlt: 混凝土梁碳纤维加固作业
+    - index: '02'
+      icon: '▱'
+      title: 裂缝与混凝土修复
+      body: 裂缝普查、灌浆修补、钢筋锈蚀处理、局部修补与防护恢复。
+      image: /assets/images/cms/services/items/1/image.png
+      imageAlt: 工人修复开裂混凝土
+    - index: '03'
+      icon: '↗'
+      title: 改造与用途变更
+      body: 洞口开设、墙体拆除、荷载提升、设备安装与翻新改造的结构支撑。
+      image: /assets/images/cms/services/items/2/image.png
+      imageAlt: 工人改造施工中安装临时支撑
+    - index: '04'
+      icon: '▥'
+      title: 钢结构与屋面光伏提升
+      body: 屋面板（檩条）、梁、支撑与连接节点的评估统筹与加固。
+      image: /assets/images/cms/services/items/3/image.png
+      imageAlt: 工人加固锈蚀钢结构屋面
+    - index: '05'
+      icon: '⌂'
+      title: 基础与沉降治理
+      body: 检测配合、基础托换方案、基础加固与沉降相关修复。
+      image: /assets/images/cms/services/items/4/image.png
+      imageAlt: 工人修复发生沉降的基础
+    - index: '06'
+      icon: '✓'
+      title: 检测与质量验证
+      body: 现场记录、材料可追溯、停检点、检测统筹与规范化交付。
+      image: /assets/images/cms/services/items/5/image.png
+      imageAlt: 工程师检查受损混凝土
+
+quickLinks:
+  - index: '01'
+    title: 了解解决方案
+    body: 碳纤维、混凝土、钢结构与基础
+    href: '#services'
+  - index: '02'
+    title: 查看项目经验
+    body: 已完成项目的工艺与方法
+    href: '#experience'
+  - index: '03'
+    title: 申请现场勘查
+    body: 提供照片、图纸与项目说明
+    href: '#contact'
+
+technologies:
+  eyebrow: 专业加固技术
+  title: 让修复方法与结构实际状况相匹配。
+  body: 每项技术均在检测与工程评审后确定。以下示例展示可能需要相应处理措施的典型状况。
+  conditionLabel: 典型状况：
+  items:
+    - index: '01'
+      title: 粘钢加固
+      condition: 梁或板承载力不足，且不具备大规模重建的空间条件。
+      image: /assets/images/cms/technologies/items/0/image.png
+      imageAlt: 钢板压力注浆加固施工
+    - index: '02'
+      title: 型钢（外包钢）加固
+      condition: 存在局部抗弯或抗剪不足、构件超载或混凝土截面受损。
+      image: /assets/images/cms/technologies/items/1/image.png
+      imageAlt: 混凝土柱外包型钢加固施工
+    - index: '03'
+      title: 碳纤维布（CFRP）
+      condition: 梁、板、柱开裂，需要以较轻的自重提升承载力，并尽量减少干扰。
+      image: /assets/images/cms/technologies/items/2/image.png
+      imageAlt: 混凝土柱碳纤维布加固
+    - index: '04'
+      title: 增大截面
+      condition: 混凝土截面损失较大、配筋不足或荷载显著增加。
+      image: /assets/images/cms/technologies/items/3/image.png
+      imageAlt: 混凝土增大截面施工
+    - index: '05'
+      title: 植筋锚固
+      condition: 新增构件、扩建或连接需要可靠的钢筋锚固。
+      image: /assets/images/cms/technologies/items/4/image.png
+      imageAlt: 后植钢筋锚固施工
+    - index: '06'
+      title: 裂缝修补与灌浆
+      condition: 活动性或静止裂缝、渗水、蜂窝麻面或锈蚀引起的劣化。
+      image: /assets/images/cms/technologies/items/5/image.png
+      imageAlt: 裂缝灌浆与混凝土修复
+    - index: '07'
+      title: 承重墙改造
+      condition: 承重墙需要开洞或拆除，改为由梁承托的布局。
+      image: /assets/images/cms/technologies/items/6/image.png
+      imageAlt: 承重墙改造并新增托换梁
+    - index: '08'
+      title: 高延性混凝土
+      condition: 抗震、抗冲击或易变形区域需要更好的变形能力与裂缝控制。
+      image: /assets/images/cms/technologies/items/7/image.png
+      imageAlt: 高延性混凝土面层施工
+    - index: '09'
+      title: 混凝土柱置换
+      condition: 柱子严重压碎、锈蚀或截面损失，需要分段置换。
+      image: /assets/images/cms/technologies/items/8/image.png
+      imageAlt: 混凝土柱分段置换，含临时支撑与新浇混凝土
+    - index: '10'
+      title: 静压锚杆桩
+      condition: 基础沉降、承载力不足，或场地受限、要求低振动与小设备的托换作业。
+      image: /assets/images/cms/technologies/items/9/image.png
+      imageAlt: 静压锚杆桩托换施工
+
+conditions:
+  eyebrow: 常见缺陷与用途变更
+  title: 识别结构状况，选择正确的处理方式。
+  body: 按结构体系归类典型症状与处理路线。最终方案需要现场检测、试验与工程评审。
+  items:
+    - index: '01'
+      title: 砌体结构
+      image: /assets/images/cms/conditions/items/0/image.png
+      imageAlt: 砌体裂缝、风化与墙体位移
+      blocks:
+        - heading: 常见缺陷
+          body: >-
+            斜向、阶梯形与竖向受压裂缝；砖体风化粉化；灰缝失效；饰面空鼓；潮湿与泛碱；
+            拉结件缺失；墙体位移与倾斜。
+        - heading: 处理方法
+          body: >-
+            裂缝灌浆、压力注浆、高延性混凝土面层、新增拉结筋、构造柱或扶壁柱、纠偏复位、
+            承重墙支撑，以及劣化严重时的控制性拆除重建。
+    - index: '02'
+      title: 木结构
+      image: /assets/images/cms/conditions/items/1/image.png
+      imageAlt: 木材腐朽、白蚁侵害与开裂
+      blocks:
+        - heading: 常见缺陷
+          body: >-
+            受潮软化或腐朽的构件、白蚁侵害、截面损失、开裂、挠度过大、连接松动，
+            以及木构件支承在潮湿砌体处的腐朽。
+        - heading: 处理方法
+          body: >-
+            切断潮源、局部构件修复或更换、钢板或型钢加固、节点加固、增设支撑、
+            防腐处理，并改善与潮湿砌体的隔离。
+    - index: '03'
+      title: 钢筋混凝土框架
+      image: /assets/images/cms/conditions/items/2/image.png
+      imageAlt: 混凝土开裂、剥落与钢筋锈蚀
+      blocks:
+        - heading: 常见缺陷
+          body: >-
+            梁板开裂、柱压碎、混凝土剥落、钢筋外露或锈蚀、挠度过大、蜂窝麻面、
+            节点薄弱与抗震构造不足。
+        - heading: 处理方法
+          body: >-
+            裂缝灌浆、混凝土修复、碳纤维或粘钢加固、增大截面、植筋锚固、
+            柱包钢或分段置换、节点加固与锈蚀防护。
+    - index: '04'
+      title: 钢结构
+      image: /assets/images/cms/conditions/items/3/image.png
+      imageAlt: 钢结构锈蚀、屈曲与节点损坏
+      blocks:
+        - heading: 常见缺陷
+          body: >-
+            锈蚀与截面损失、构件变形、局部屈曲、疲劳裂纹、螺栓松动、焊缝质量差、
+            连接节点损坏，以及屋面或设备新增荷载下承载力不足。
+        - heading: 处理方法
+          body: >-
+            除锈与防护、螺栓或焊接加强板、构件更换、增设支撑、节点升级、檩条加固、
+            荷载重分配与受控临时支撑。
+    - index: '05'
+      title: 基础
+      image: /assets/images/cms/conditions/items/4/image.png
+      imageAlt: 沉降裂缝、基础转动与地面不平
+      blocks:
+        - heading: 常见缺陷
+          body: >-
+            差异沉降、墙体斜裂缝、地面不平、基础转动、地基承载力不足、水土流失、
+            浸水软化与基础混凝土劣化。
+        - heading: 处理方法
+          body: >-
+            地基与排水调查、基础托换、基础扩大、微型桩或局部支撑、压力注浆、
+            钢筋混凝土修复、沉降监测、纠偏与结构复位。
+    - index: '06'
+      title: 空间改造与用途变更
+      image: /assets/images/cms/conditions/items/5/image.png
+      imageAlt: 影响空间扩展的结构限制
+      blocks:
+        - heading: 典型需求
+          body: >-
+            拆除承重墙、开设更大洞口、调整房间布局、连通空间、加层或增加设备，
+            以及将建筑改造为新的商业或公共用途。
+        - heading: 处理方法
+          body: >-
+            临时支撑、托换梁与框架、传力路径复核、以梁替换墙体、新增柱、
+            局部基础加固、分阶段拆除与施工监测。
+    - index: '07'
+      title: 承载力提升
+      image: /assets/images/cms/conditions/items/6/image.png
+      imageAlt: 楼板、屋面与柱超载缺陷
+      blocks:
+        - heading: 典型需求
+          body: >-
+            更高的仓储、使用人数、机械、光伏、水箱或屋面荷载；设计用途变更；
+            振动过大；或既有构件不满足承载要求。
+        - heading: 处理方法
+          body: >-
+            碳纤维加固、粘钢或外包钢、增大截面、新增钢筋与支撑、钢结构构件升级、
+            基础加固、荷载重分配与验证性检测。
+
+materials:
+  eyebrow: 材料、品牌与专业设备
+  title: 经认可的材料体系，配合专业工具与受控施工。
+  body: 最终品牌与产品等级，依据设计规格、基材状况、检测要求与经核实的本地供应情况确定。
+  brandsTitle: 代表性材料品牌
+  brands:
+    - name: Sika
+      body: 混凝土修复、粘接、灌浆、防水与碳纤维加固体系。
+    - name: Hilti
+      body: 植筋、化学锚栓、紧固系统与专业安装工具。
+    - name: 同等认可产品
+      body: 经技术资料与相容性评审后，亦可采用其他国际或本地可获得的产品体系。
+  selectionTitle: 选材原则
+  selectionBody: 任何产品都不会仅凭品牌选择。设计承载力、认证、与基材的相容性、施工条件、保质期与本地技术支持均须核实。
+  equipment:
+    - title: 检测设备
+      image: /assets/images/cms/materials/equipment/0/image.png
+      imageAlt: 专业结构检测设备组合
+      items:
+        - 钢筋扫描仪与保护层测厚仪
+        - 混凝土回弹仪
+        - 超声波检测设备
+        - 裂缝宽度显微镜与量测卡
+        - 激光水平仪与位移监测
+        - 湿度计与锈蚀评估工具
+    - title: 加固设备
+      image: /assets/images/cms/materials/equipment/1/image.png
+      imageAlt: 专业结构加固设备组合
+      items:
+        - 低压裂缝灌浆泵
+        - 结构胶与灌浆料注射设备
+        - 金刚石取芯与钻孔机
+        - 混凝土铣刨机与除尘设备
+        - 碳纤维滚压工具与基面处理工具
+        - 液压千斤顶与临时支撑系统
+    - title: 质量控制设备
+      image: /assets/images/cms/materials/equipment/2/image.png
+      imageAlt: 专业加固质量控制设备组合
+      items:
+        - 锚固拉拔检测设备
+        - 扭矩控制安装工具
+        - 结构胶温度与混合控制
+        - 材料批次与有效期追踪
+        - 影像检测记录
+        - 经校准的量测与验收工具
+  note: 品牌引用仅表示可代表的体系能力，不构成独家供货承诺。产品仍须通过项目审批并满足采购可行性。
+
+experience:
+  eyebrow: 代表性经验
+  title: 覆盖中国、肯尼亚与东非的项目经验
+  body: 代表性加固方法、工艺与区域应用场景。出于保密考虑，不披露具体项目名称与精确位置。
+  feature:
+    label: 学校改造与抗震加固
+    title: 红谷滩区云溪学校改造工程
+    body: >-
+      在校园部分区域保持正常使用的情况下，对既有教学楼进行改造与加固。
+      工程提升了结构承载力与抗震性能，并满足更新后的教学功能空间需求。
+    points:
+      - 碳纤维、压力注浆粘钢与增大截面加固
+      - 静压锚杆桩与砌体抗震加固
+      - 分阶段施工、扬尘与噪声控制及隐蔽工程检查
+    image: /assets/images/cms/experience/feature/image.jpg
+    imageAlt: 云溪学校改造工程中的结构加固作业
+  projects:
+    - title: 酒店翻新改造
+      subtitle: 既有建筑功能适配
+      image: /assets/images/cms/experience/projects/0/image.jpg
+      imageAlt: 多层酒店翻新改造项目
+    - title: 学校建筑升级
+      subtitle: 分阶段结构施工
+      image: /assets/images/cms/experience/projects/1/image.jpg
+      imageAlt: 工人进行梁柱加固
+    - title: 工业厂房修复
+      subtitle: 碳纤维与裂缝处理
+      image: /assets/images/cms/experience/projects/2/image.jpg
+      imageAlt: 混凝土结构碳纤维加固作业
+    - title: 钢结构屋面提升
+      subtitle: 承载与节点改善
+      image: /assets/images/cms/experience/projects/3/image.jpg
+      imageAlt: 钢结构屋面加固
+  disclaimer: 项目与应用图片为代表性示意。出于保密考虑，不披露具体项目名称与位置。
+
+process:
+  eyebrow: 一体化交付
+  title: 检测、设计与施工在同一协同流程中完成。
+  body: 同一个团队从首次查勘到最终交付，保持技术决策、现场条件与施工质量的一致性。
+  integration:
+    - index: '01'
+      icon: '⌕'
+      title: 检测
+      body: 查勘结构、绘制缺陷分布、复核尺寸并查明根本原因。
+      meta: 状况报告 • 检测计划 • 影像记录
+    - index: '02'
+      icon: '◈'
+      title: 设计
+      body: 制定可实施的加固方案、施工方法与协同范围。
+      meta: 工程方案 • 节点详图 • 材料清单
+    - index: '03'
+      icon: '▤'
+      title: 施工
+      body: 按批准方案实施、检查并记录，实现受控的现场交付。
+      meta: 安全与健康控制 • 停检点 • 交付资料
+  detailTitle: 详细项目流程
+  steps:
+    - index: '1'
+      title: 初步沟通
+      body: 建筑类型、已发现问题、位置、紧迫程度与可用图纸。
+    - index: '2'
+      title: 现场查勘
+      body: 状况调查、测量、影像记录与检测需求。
+    - index: '3'
+      title: 工程响应
+      body: 本地注册工程师参与、加固方案、工作范围与预算。
+    - index: '4'
+      title: 专业施工
+      body: 经批准的材料、施工方案、安全控制与检查要点。
+    - index: '5'
+      title: 验证与交付
+      body: 检测、影像记录、竣工资料与维护建议。
+
+about:
+  eyebrow: 为什么选择我们
+  title: 保护建筑、人员与工期的结构专业团队。
+  body: >-
+    HY Structural Reinforcement Engineering Limited 专注于专业加固与修复，
+    而不是把结构工作当作普通的建筑维护。我们的本地与国际团队整合状况评估、工程设计、
+    材料选择、现场监督与可追溯的质量控制。
+  points:
+    - index: '01'
+      title: 专业诊断
+      body: 先找到结构性原因，再确定修复方式。
+    - index: '02'
+      title: 一体化交付
+      body: 检测、设计与施工决策保持协同。
+    - index: '03'
+      title: 风险受控
+      body: 通过停检点、临时工程与记录降低现场风险。
+    - index: '04'
+      title: 本地协作
+      body: 肯尼亚专业人员与项目相关方全程贴近交付。
+  riskTitle: 为什么专业经验很重要：
+  riskBody: >-
+    结构加固涉及传力路径、临时支撑、材料相容性与隐蔽缺陷。如果由缺乏评估与设计的
+    非专业承包商施工，可能掩盖损伤、使相邻构件超载、造成不安全的临时状态、过早失效，
+    并使业主承担审批与责任风险。
+  image: /assets/images/cms/about/image.png
+  imageAlt: 中国与肯尼亚结构工程师在内罗毕办公室协作
+
+contact:
+  eyebrow: 从问题开始
+  title: 告诉我们您在结构中看到的情况。
+  body: 请提供位置、建筑类型、照片与简要描述，我们将协助判断合适的下一步。
+  email: 55652140@qq.com
+  website: https://www.huayejiagu.com
+  websiteLabel: www.huayejiagu.com
+  markets: 肯尼亚内罗毕 Block D 1124 Laikipia Rd
+  form:
+    nameLabel: 姓名
+    companyLabel: 公司
+    emailLabel: 邮箱
+    phoneLabel: 电话 / WhatsApp
+    messageLabel: 结构方面的问题是什么？
+    messagePlaceholder: 建筑类型、位置、可见损伤与时间要求
+    submitLabel: 生成邮件咨询
+    hint: 该表单会打开您的邮件客户端并填入以上信息，便于您同时附上照片。
+  floatLabel: 邮件联系工程师
+
+footer:
+  tagline: 结构加固 • 修复 • 改造
+  copyright: © 2026 HY Structural Reinforcement Engineering Limited

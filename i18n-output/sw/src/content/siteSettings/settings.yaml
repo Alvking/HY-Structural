@@ -1,0 +1,65 @@
+brandName: HY Structural Reinforcement Engineering Limited
+defaultMetaDescription: >-
+  Uimarishaji wa miundo, uimarishaji kwa nyuzi za kaboni (CFRP), ukarabati wa nyufa,
+  ukarabati wa saruji, uimarishaji wa paa za chuma na ukarabati wa msingi kwa majengo
+  na viwanda nchini Kenya.
+logoPath: /assets/images/cms/logoPath.png
+defaultOgImage: /assets/images/cms/defaultOgImage.png
+defaultLocale: en
+localeCookieName: site_locale
+localeSwitcherLabel: Lugha
+mobileMenuLabel: Badilisha menyu ya urambazaji
+supportedLocales:
+  - code: en
+    label: English
+  - code: zh-CN
+    label: 简体中文
+  - code: sw
+    label: Kiswahili
+categoryTranslations: []
+navigation:
+  - label: Uwezo wa kiufundi
+    href: '#services'
+    isPrimary: false
+  - label: Aina za miundo
+    href: '#conditions'
+    isPrimary: false
+  - label: Miradi
+    href: '#experience'
+    isPrimary: false
+  - label: Mtiririko
+    href: '#process'
+    isPrimary: false
+  - label: Kuhusu sisi
+    href: '#about'
+    isPrimary: false
+  - label: Omba ziara ya uwanjani
+    href: '#contact'
+    isPrimary: true
+footerBody: >-
+  Uimarishaji wa kitaalamu wa miundo, ukarabati na uboreshaji kwa majengo na viwanda
+  vilivyopo nchini Kenya, ukitolewa kwa ukaguzi, usanifu na udhibiti wa ujenzi unaoandikwa.
+footerLinks:
+  - label: Uwezo wa kiufundi
+    href: '#services'
+  - label: Aina za miundo
+    href: '#conditions'
+  - label: Miradi
+    href: '#experience'
+  - label: Mtiririko
+    href: '#process'
+  - label: Wasiliana
+    href: '#contact'
+footerContactLabel: Barua pepe
+footerContactValue: 55652140@qq.com
+contactPhonePrimary: '0728630800'
+contactPhonePrimaryHref: tel:+254728630800
+contactPhoneSecondary: '0742159128'
+contactPhoneSecondaryHref: tel:+254742159128
+footerPhone: '0728630800 / 0742159128'
+footerAddress: Block D 1124 Laikipia Rd, Nairobi
+footerQuickLinksLabel: Viungo vya haraka
+footerContactColumnTitle: Wasiliana
+footerEmail: 55652140@qq.com
+footerMotto: Madaktari wa Miundo. Walinzi wa Majengo.
+copyrightLine: © 2026 HY Structural Reinforcement Engineering Limited

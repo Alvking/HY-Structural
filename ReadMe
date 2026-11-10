@@ -1,0 +1,107 @@
+# Project Setup & Local Development Guide
+
+This guide documents the complete setup workflow from extracting the archive to launching the local development environment and CMS dashboard.
+
+---
+
+## Prerequisites
+
+* **Node.js**: v20+ or v24+ (verify with `node -v`)
+* **Package Manager**: `pnpm` (install globally via `npm install -g pnpm`)
+
+---
+
+## 1. Extracting the Project Archive
+
+Ensure the full source files (including `src/` and `scripts/`) are properly extracted from the archive rather than running directly from a partial copy.
+
+From PowerShell in the archive's parent directory (`C:\Users\Administrator\Desktop\HY`):
+
+```powershell
+cd C:\Users\Administrator\Desktop\HY
+Expand-Archive -Path ".\9-21-1(1).zip" -DestinationPath ".\extracted_project" -Force
+
+```
+
+Navigate into the root folder where `package.json` resides:
+
+```powershell
+cd .\extracted_project\9-21-1(1)
+
+```
+
+Confirm core directories exist before proceeding:
+
+```powershell
+Test-Path src, scripts
+
+```
+
+*Both checks must return `True`.*
+
+---
+
+## 2. Installing Dependencies
+
+Install the project packages using `pnpm` to ensure all workspace dependencies and CLI binaries are linked correctly:
+
+```powershell
+pnpm install
+
+```
+
+> **Note on warnings:** A notice stating `Update available! 10.8.1 -> ...` during installation is informational and does not affect the setup. Wait until `pnpm install` finishes and returns to the command prompt.
+> 
+> 
+
+Verify that the local Astro binary was generated:
+
+```powershell
+Test-Path .\node_modules\.bin\astro.cmd
+
+```
+
+---
+
+## 3. Running the Application
+
+### Option A: Direct Developer Mode (Recommended)
+
+To run the server with real-time logs and immediate error visibility:
+
+```powershell
+
+
+
+```
+
+### Option B: Pre-configured Startup Script
+
+The project includes a Windows batch helper to start the dev server and open the browser automatically:
+
+```powershell
+.\启动后台.cmd
+
+```
+
+---
+
+## 4. Accessing the Application
+
+Once the development server is active, access the interfaces at the following URLs:
+
+* **Keystatic CMS Admin Panel:** [http://127.0.0.1:4321/keystatic](http://127.0.0.1:4321/keystatic)
+
+
+* **Main Website Preview:** [http://127.0.0.1:4321/](https://www.google.com/search?q=http://127.0.0.1:4321/)
+
+
+
+---
+
+## Troubleshooting Common Errors
+
+* **`'pnpm.cmd' is not recognized`**: Run `npm install -g pnpm` in your terminal, then restart PowerShell.
+* **`Cannot find module '...src\content\siteSettings\settings.yaml'`**: The `src` directory was not extracted. Re-extract the `.zip` archive completely.
+* **`'astro' is not recognized` / `node_modules missing**`: Run `pnpm install` in the project root before attempting `pnpm run dev`.
+* **`ERR_CONNECTION_REFUSED` at `127.0.0.1:4321**`: The dev server is either still building or failed on startup. Inspect the terminal running `pnpm run dev` or review the latest file in `.\logs\` to check for crashes.

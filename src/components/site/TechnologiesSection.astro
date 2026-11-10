@@ -1,0 +1,45 @@
+---
+import type { SitePageContent } from '../../lib/site-content';
+
+interface Props {
+  technologies?: SitePageContent['technologies'];
+}
+
+const { technologies } = Astro.props;
+---
+
+{technologies && (
+  <section class="site-section site-section--muted">
+    <div class="wrap">
+      <div class="section-head reveal">
+        {technologies.eyebrow && <p class="eyebrow">{technologies.eyebrow}</p>}
+        {technologies.title && <h2>{technologies.title}</h2>}
+        {technologies.body && <p>{technologies.body}</p>}
+      </div>
+
+      <div class="card-grid card-grid--tech">
+        {(technologies.items || []).map((item) => (
+          <article class="photo-card reveal">
+            <div class="photo-card__media">
+              <img src={item.image} alt={item.imageAlt || item.title || ''} width="1536" height="1024" loading="lazy" />
+              {item.index && <span class="photo-card__index">{item.index}</span>}
+            </div>
+            <div class="photo-card__body">
+              <h3>{item.title}</h3>
+              {item.condition && (
+                <p>
+                  {technologies.conditionLabel && (
+                    <>
+                      <strong>{technologies.conditionLabel}</strong>{' '}
+                    </>
+                  )}
+                  {item.condition}
+                </p>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

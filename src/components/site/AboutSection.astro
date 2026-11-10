@@ -1,0 +1,46 @@
+---
+import type { SitePageContent } from '../../lib/site-content';
+
+interface Props {
+  about?: SitePageContent['about'];
+}
+
+const { about } = Astro.props;
+---
+
+{about && (
+  <section class="site-section site-section--muted" id="about">
+    <div class="wrap about-layout">
+      <div class="reveal">
+        {about.eyebrow && <p class="eyebrow">{about.eyebrow}</p>}
+        <h2>{about.title}</h2>
+        <p>{about.body}</p>
+
+        {(about.points || []).length > 0 && (
+          <div class="why-points">
+            {about.points.map((point) => (
+              <div>
+                <strong>{point.index}</strong>
+                <h3>{point.title}</h3>
+                <p>{point.body}</p>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {about.riskBody && (
+          <p class="risk-note">
+            {about.riskTitle && (
+              <>
+                <strong>{about.riskTitle}</strong>{' '}
+              </>
+            )}
+            {about.riskBody}
+          </p>
+        )}
+      </div>
+
+      <img src={about.image} alt={about.imageAlt || ''} width="1536" height="1024" loading="lazy" class="reveal" />
+    </div>
+  </section>
+)}

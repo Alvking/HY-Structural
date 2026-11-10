@@ -1,0 +1,40 @@
+---
+import type { SitePageContent } from '../../lib/site-content';
+
+interface Props {
+  conditions?: SitePageContent['conditions'];
+}
+
+const { conditions } = Astro.props;
+---
+
+{conditions && (
+  <section class="site-section site-section--dark" id="conditions">
+    <div class="wrap">
+      <div class="section-head reveal">
+        {conditions.eyebrow && <p class="eyebrow">{conditions.eyebrow}</p>}
+        {conditions.title && <h2>{conditions.title}</h2>}
+        {conditions.body && <p>{conditions.body}</p>}
+      </div>
+
+      <div class="condition-list">
+        {(conditions.items || []).map((item) => (
+          <article class="condition-panel reveal">
+            <div class="condition-panel__media">
+              <img src={item.image} alt={item.imageAlt || item.title || ''} width="1536" height="1024" loading="lazy" />
+              <span class="condition-panel__tag">{item.index} · {item.title}</span>
+            </div>
+            <div class="condition-panel__body">
+              {(item.blocks || []).map((block) => (
+                <div>
+                  <h3>{block.heading}</h3>
+                  <p>{block.body}</p>
+                </div>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

@@ -1,0 +1,318 @@
+---
+import type { SiteSettings } from '../lib/site-content';
+import { localizeHref, stripLocaleFromPath } from '../lib/site-content';
+
+interface Props {
+  site: SiteSettings;
+  locale: string;
+  currentPath: string;
+}
+
+const { site, locale, currentPath } = Astro.props;
+const hasBrand = Boolean(site.brandName);
+const navItems = site.navigation.filter((item) => item.label);
+const shouldRender = hasBrand || navItems.length > 0;
+const basePath = stripLocaleFromPath(currentPath || '/', site.supportedLocales);
+const localeLinks = site.supportedLocales.map((item) => ({
+  ...item,
+  href: localizeHref(item.code, basePath, site.defaultLocale, site.supportedLocales),
+  active: item.code.toLowerCase() === locale.toLowerCase(),
+}));
+const activeLocale = localeLinks.find((item) => item.active) || localeLinks[0];
+---
+
+{shouldRender && (
+  <header class="navbar-wrapper glass-effect">
+    <div class="container navbar-container">
+      {hasBrand ? (
+        <a href={localizeHref(locale, '/', site.defaultLocale, site.supportedLocales)} class="brand-logo">
+          {site.brandName}
+        </a>
+      ) : (
+        <div></div>
+      )}
+
+      <nav class="nav-menu" id="nav-menu">
+        {navItems.map((item) => (
+          <a
+            href={localizeHref(locale, item.href || '/', site.defaultLocale, site.supportedLocales)}
+            class={`nav-link ${item.isPrimary ? 'primary-button' : ''}`}
+          >
+            {item.label}
+          </a>
+        ))}
+      </nav>
+
+      <div class="nav-controls">
+        {localeLinks.length > 1 && (
+          <details class="locale-switcher" aria-label={site.localeSwitcherLabel || 'Language'}>
+            <summary class="locale-current">{activeLocale?.label || activeLocale?.code || locale}</summary>
+            <div class="locale-menu">
+              {localeLinks.map((item) => (
+                <a href={item.href} class={`locale-link ${item.active ? 'active' : ''}`} aria-current={item.active ? 'page' : undefined}>
+                  <span>{item.label || item.code}</span>
+                  <span class="locale-code">{item.code}</span>
+                </a>
+              ))}
+            </div>
+          </details>
+        )}
+
+        <button class="hamburger" id="hamburger-btn" aria-label={site.mobileMenuLabel} type="button">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-nav">
+        {navItems.map((item) => (
+          <a
+            href={localizeHref(locale, item.href || '/', site.defaultLocale, site.supportedLocales)}
+            class={`mobile-nav-link ${item.isPrimary ? 'mobile-primary-button' : ''}`}
+          >
+            {item.label}
+          </a>
+        ))}
+        {localeLinks.length > 1 && (
+          <div class="mobile-locales">
+            {localeLinks.map((item) => (
+              <a href={item.href} class={`mobile-locale-link ${item.active ? 'active' : ''}`}>
+                <span>{item.label || item.code}</span>
+                <span class="locale-code">{item.code}</span>
+              </a>
+            ))}
+          </div>
+        )}
+      </nav>
+    </div>
+  </header>
+)}
+
+<script>
+  const btn = document.getElementById('hamburger-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn?.addEventListener('click', () => {
+    const isOpen = menu?.classList.toggle('open');
+    btn?.classList.toggle('active');
+    document.body.classList.toggle('menu-open');
+  });
+
+  const mobileLinks = menu?.querySelectorAll('.mobile-nav-link');
+  mobileLinks?.forEach(link => {
+    link.addEventListener('click', () => {
+      menu?.classList.remove('open');
+      btn?.classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
+</script>
+
+<style>
+  .navbar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid var(--color-border);
+    transition: var(--transition-smooth);
+  }
+
+  .navbar-container {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand-logo {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    letter-spacing: -0.02em;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .locale-switcher { position: relative; display: block; }
+  .locale-current { display: inline-flex; align-items: center; min-height: 2.5rem; max-width: 12rem; padding: 0 0.9rem; border: 1px solid rgba(28, 25, 23, 0.12); border-radius: var(--radius-md); color: var(--color-text-muted); font-size: 0.78rem; font-weight: 700; cursor: pointer; list-style: none; }
+  .locale-current::-webkit-details-marker { display: none; }
+  .locale-current { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .locale-menu { position: absolute; top: calc(100% + 0.55rem); right: 0; display: grid; gap: 0.25rem; width: min(22rem, calc(100vw - 2rem)); max-height: min(28rem, calc(100vh - 7rem)); overflow: auto; padding: 0.5rem; border: 1px solid rgba(28, 25, 23, 0.12); border-radius: var(--radius-md); background: var(--color-background); box-shadow: 0 20px 60px rgba(28, 25, 23, 0.14); }
+  .locale-link { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 2.25rem; padding: 0 0.65rem; border-radius: calc(var(--radius-md) * 0.75); font-size: 0.82rem; color: var(--color-text-muted); }
+  .locale-link:hover,
+  .locale-link.active { color: var(--color-text); background: rgba(28, 25, 23, 0.06); }
+  .locale-code { font-size: 0.72rem; opacity: 0.62; text-transform: uppercase; }
+
+  .nav-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+  }
+
+  .nav-link:hover {
+    color: var(--color-primary);
+  }
+
+  .primary-button {
+    background: var(--color-text);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    transition: var(--transition-smooth);
+  }
+
+  .primary-button:hover {
+    background: var(--color-primary);
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  /* Controls wrapper */
+  .nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  /* Hamburger */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .hamburger-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--color-text);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .hamburger.active .hamburger-line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .hamburger.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .hamburger-line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* Mobile menu overlay */
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 5rem);
+    background: rgba(250, 250, 249, 0.98);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    z-index: 999;
+    overflow-y: auto;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .mobile-menu.open {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 0.5rem;
+  }
+
+  .mobile-nav-link {
+    display: block;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-text);
+    border-radius: var(--radius-md);
+    transition: background 0.2s ease;
+  }
+
+  .mobile-nav-link:hover {
+    background: rgba(28, 25, 23, 0.06);
+  }
+
+  .mobile-primary-button {
+    background: var(--color-text);
+    color: white;
+    text-align: center;
+  }
+
+  .mobile-primary-button:hover {
+    background: var(--color-primary);
+    color: white;
+  }
+
+  .mobile-locales {
+    display: grid;
+    gap: 0.25rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .mobile-locale-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.85rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+  }
+
+  .mobile-locale-link.active {
+    color: var(--color-text);
+    background: rgba(28, 25, 23, 0.06);
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+  }
+</style>

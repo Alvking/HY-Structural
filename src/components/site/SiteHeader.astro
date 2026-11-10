@@ -1,0 +1,127 @@
+---
+import type { SitePageContent, SiteSettings } from '../../lib/site-content';
+import { localizeHref, stripLocaleFromPath } from '../../lib/site-content';
+
+interface Props {
+  site: SiteSettings;
+  page: SitePageContent;
+  locale: string;
+  currentPath?: string;
+}
+
+const { site, page, locale, currentPath = '/' } = Astro.props;
+const navItems = (site.navigation || []).filter((item) => item.label);
+const basePath = stripLocaleFromPath(currentPath, site.supportedLocales);
+const href = (target?: string) =>
+  localizeHref(locale, target || basePath || '/', site.defaultLocale, site.supportedLocales);
+const localeLinks = (site.supportedLocales || []).map((item) => ({
+  code: item.code,
+  label: item.label || item.code,
+  href: localizeHref(item.code, basePath || '/', site.defaultLocale, site.supportedLocales),
+  active: item.code.toLowerCase() === locale.toLowerCase(),
+}));
+const utility = page.utilityBar;
+const brand = page.brand || {};
+const brandName = site.brandName || brand.name || '';
+---
+
+<div class="site-chrome">
+  {utility && (utility.message || (utility.links || []).length > 0) && (
+    <div class="util-bar">
+      <div class="wrap util-bar__inner">
+        {utility.message && <span>{utility.message}</span>}
+        <span class="util-bar__right">
+          <span class="util-bar__links">
+            {(utility.links || []).map((link) => (
+              <a href={href(link.href)}>{link.label}</a>
+            ))}
+          </span>
+          {localeLinks.length > 1 && (
+            <span class="locale-switch locale-switch--bar" role="group" aria-label={site.localeSwitcherLabel || 'Language'}>
+              {localeLinks.map((item) => (
+                <a
+                  href={item.href}
+                  class={item.active ? 'is-active' : ''}
+                  hreflang={item.code}
+                  aria-current={item.active ? 'true' : undefined}
+                >{item.label}</a>
+              ))}
+            </span>
+          )}
+        </span>
+      </div>
+    </div>
+  )}
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href={href('/')} aria-label={`${brandName} home`}>
+        <span class="brand__mark">
+          {site.logoPath ? (
+            <img src={site.logoPath} alt="" width="44" height="44" />
+          ) : (
+            <span>{brand.mark}</span>
+          )}
+        </span>
+        <span class="brand__text">
+          <strong>{brand.shortName || brandName}</strong>
+          <small>{brand.legalName || brandName}</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        {navItems.map((item) => (
+          <a href={href(item.href)} class={item.isPrimary ? 'is-primary' : ''}>{item.label}</a>
+        ))}
+      </nav>
+
+      <div class="header-tools">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-mobile-nav">
+          <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="menu-toggle__label">{site.mobileMenuLabel || 'Menu'}</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="site-mobile-nav">
+      {navItems.map((item) => (
+        <a href={href(item.href)} class={item.isPrimary ? 'is-primary' : ''}>{item.label}</a>
+      ))}
+      {localeLinks.length > 1 && (
+        <div class="mobile-locale-switch">
+          <span class="mobile-locale-switch__label">{site.localeSwitcherLabel || 'Language'}</span>
+          <div>
+            {localeLinks.map((item) => (
+              <a
+                href={item.href}
+                class={item.active ? 'is-active' : ''}
+                hreflang={item.code}
+              >{item.label}</a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </header>
+</div>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const mobileNav = document.getElementById('site-mobile-nav');
+
+  const closeMenu = () => {
+    mobileNav?.classList.remove('is-open');
+    toggle?.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('site-locked');
+  };
+
+  toggle?.addEventListener('click', () => {
+    const isOpen = mobileNav?.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    document.body.classList.toggle('site-locked', Boolean(isOpen));
+  });
+
+  mobileNav?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+</script>
